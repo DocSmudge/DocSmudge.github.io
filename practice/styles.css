@@ -19,6 +19,9 @@ main h1 {
 main img {
   float: right;
 }
+main ul li {
+  list-style-type: none;
+}
 
 footer {
   text-align: center;

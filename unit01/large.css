@@ -1,0 +1,7 @@
+/*----------- Sample Media Query --------------*/
+@media only screen and (min-width: 64rem) {
+    main p {
+      color: purple;
+    }
+  } /* end of media query */
+  
