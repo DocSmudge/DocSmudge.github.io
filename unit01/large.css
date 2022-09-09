@@ -1,5 +1,12 @@
 /*----------- Sample Media Query --------------*/
 @media only screen and (min-width: 64rem) {
+  header,
+  nav,
+  main,
+  footer {
+    margin: 0 auto;
+    width: 100%;
+  }
   body {
     min-height: 100vh;
     display: flex;
