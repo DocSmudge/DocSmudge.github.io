@@ -1,7 +1,77 @@
 /*----------- Sample Media Query --------------*/
 @media only screen and (min-width: 64rem) {
-    main p {
-      color: purple;
-    }
-  } /* end of media query */
-  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    text-align: left;
+    background-color: #c4851b;
+    max-width: 75rem;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+  header h1,
+  h2 {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    float: left;
+    text-align: center;
+    background-color: #d0af71;
+    width: 100%;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    max-width: 75rem;
+    text-align: left;
+    list-style-type: none;
+    background-color: #d0af71;
+
+    padding-right: 1rem;
+    font-size: x-large;
+  }
+  nav ul li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .activeAnchor {
+    background-color: #462e10;
+    opacity: 70%;
+    color: white;
+    height: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  main {
+    max-width: 75rem;
+  }
+  ul li main h1 {
+    text-align: center;
+  }
+  main img {
+    float: right;
+    width: 25%;
+  }
+  main p {
+    text-align: left;
+  }
+  main ul li {
+    list-style-type: none;
+  }
+  footer {
+    background-color: #c4851b;
+    text-align: center;
+    max-width: 75rem;
+    clear: both;
+    margin-top: auto;
+  }
+} /* end of media query */
