@@ -10,7 +10,22 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+  width: 100%;
+}
+nav {
+  max-width: 75rem;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 header {
   text-align: left;
   background-color: #c4851b;
