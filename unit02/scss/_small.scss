@@ -1,50 +1,76 @@
 @media only screen and (max-width: 559px) {
     body {
-        color: blue;
+        font-family: "Roboto", sans-serif;
     }
-    .logo {
+    h2 {
         display: none;
     }
     header {
         max-width: 75rem;
         align-items: center;
-        padding: 0.5rem 2vw;
-        background-color: greenyellow;
+        height: 25vh;
+        width: 100%;
+        background-color: #2596be;
 
         h1 {
             font-size: 1.6rem;
             font-weight: lighter;
             padding-left: 0.5rem;
         }
+        .logo {
+            float: left;
+            padding-right: 1rem;
+        }
     }
-
+    #headerwrap {
+        position: absolute;
+        width: 100%;
+        text-align: left;
+    }
     //start nav stuff
     nav {
         max-width: 75rem;
+
         ul {
             padding-left: 0;
             list-style-type: none;
         }
 
         ul li a {
-            color: #333;
             text-decoration: none;
             display: block;
             border-top: solid 1px rgba(0, 0, 0, 1);
             padding: 1rem 2vw;
         }
         ul li a:hover {
-            background-color: green;
+            background-color: #2596be;
         }
         a {
             height: 1rem;
         }
 
         ul li.active a {
-            background-color: lighten(hotpink, 10%);
+            background-color: lighten(#0b2d39, 10%);
+            color: white;
         }
     } //end of nav
-    p {
-        padding: 1rem 2vw;
+    main {
+        p {
+            padding: 1rem 2vw;
+        }
+        background-color: #e9f5f9;
+    }
+    .hero {
+        width: 100%;
+    }
+    .brain {
+        width: 100%;
+    }
+    footer {
+        background-color: #2596be;
+        color: white;
+        text-align: center;
+        max-width: 75rem;
+        clear: both;
     }
 }
