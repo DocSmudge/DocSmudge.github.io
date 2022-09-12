@@ -416,6 +416,9 @@ template {
     font-weight: lighter;
     padding-left: 0.5rem;
   }
+  nav {
+    max-width: 75rem;
+  }
   nav ul {
     padding-left: 0;
     list-style-type: none;
@@ -448,7 +451,7 @@ template {
 nav,
 main,
 footer {
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
   }
   body {
@@ -468,12 +471,15 @@ footer {
   nav ul {
     list-style-type: none;
   }
+  nav ul li:hover {
+    background-color: red;
+    display: block;
+  }
   nav ul li a {
     text-decoration: none;
-    display: inline-block;
-  }
-  nav ul li a:hover {
-    background-color: red;
+    display: block;
+    padding: 8px 15px;
+    margin: 0;
   }
   .container {
     display: flex;
