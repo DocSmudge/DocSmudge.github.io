@@ -467,7 +467,6 @@ template {
     background-color: #2596be;
     color: white;
     text-align: center;
-    max-width: 75rem;
     clear: both;
   }
 }
@@ -521,7 +520,7 @@ footer {
   }
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding-left: 0;
     width: 100%;
@@ -555,9 +554,9 @@ footer {
     background-color: #2596be;
     color: white;
     text-align: center;
-    max-width: 75rem;
     clear: both;
     padding: 6px;
+    width: 100%;
   }
 }
 /* end of media query */
