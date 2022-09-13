@@ -6,6 +6,11 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -407,27 +412,20 @@ template {
   }
   header {
     max-width: 75rem;
-    align-items: center;
-    height: 25vh;
     width: 100%;
     background-color: #2596be;
   }
-  header h1 {
-    font-size: 1.6rem;
-    font-weight: lighter;
-    padding-left: 0.5rem;
+  header div.headerContent {
+    display: flex;
+    align-items: baseline;
+    padding: 1rem;
   }
-  header .logo {
-    float: left;
-    padding-right: 1rem;
-  }
-  #headerwrap {
-    position: absolute;
-    width: 100%;
-    text-align: left;
+  header div.headerContent h1 {
+    margin: 0;
   }
   nav {
     max-width: 75rem;
+    color: black;
   }
   nav ul {
     padding-left: 0;
@@ -438,12 +436,10 @@ template {
     display: block;
     border-top: solid 1px rgb(0, 0, 0);
     padding: 1rem 2vw;
+    height: 1rem;
   }
   nav ul li a:hover {
     background-color: #2596be;
-  }
-  nav a {
-    height: 1rem;
   }
   nav ul li.active a {
     background-color: #134f64;
@@ -451,6 +447,9 @@ template {
   }
   main {
     background-color: #e9f5f9;
+  }
+  main h1 {
+    margin-left: 1rem;
   }
   main p {
     padding: 1rem 2vw;
@@ -533,6 +532,9 @@ footer {
   }
   main {
     background-color: #e9f5f9;
+  }
+  main h1 {
+    margin-left: 1rem;
   }
   main h2 {
     margin: 0.5rem;

@@ -24,17 +24,17 @@
 
         ul {
             list-style-type: none;
-        }
-        ul li:hover {
-            background-color: #0b2d39;
-            display: block;
-        }
-        ul li a {
-            text-decoration: none;
-            display: block;
-            padding: 8px 15px;
-            margin: 0;
-            color: white;
+            li:hover {
+                background-color: #0b2d39;
+                display: block;
+            }
+            li a {
+                text-decoration: none;
+                display: block;
+                padding: 8px 15px;
+                margin: 0;
+                color: white;
+            }
         }
         .active {
             background-color: #0b2d39;
@@ -59,15 +59,18 @@
         margin-left: 2%;
         padding-bottom: 0.5rem;
     }
+
     main {
+        background-color: #e9f5f9;
+        h1 {
+            margin-left: 1rem;
+        }
         h2 {
             margin: 0.5rem;
         }
         p {
             margin: 0.5rem;
         }
-        background-color: #e9f5f9;
-        
     }
     .hero {
         width: 100%;
@@ -85,4 +88,5 @@
         max-width: 75rem;
         clear: both;
     }
-} /* end of media query */
+}
+/* end of media query */
