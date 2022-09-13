@@ -19,6 +19,7 @@ footer {
 }
 nav {
   max-width: 75rem;
+  
 }
 body {
   min-height: 100vh;
@@ -49,10 +50,15 @@ nav ul li {
   text-align: center;
   list-style-type: none;
   background-color: #d0af71;
+  /* padding: 20px; */
+  font-size: x-large;
+
 }
 nav ul li a {
   color: black;
   display: inline-block;
+  text-decoration: none;
+  padding: 20px;
 }
 .activeAnchor {
   background-color: #462e10;
