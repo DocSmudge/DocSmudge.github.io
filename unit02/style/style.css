@@ -407,9 +407,6 @@ template {
   body {
     font-family: "Roboto", sans-serif;
   }
-  h2 {
-    display: none;
-  }
   header {
     max-width: 75rem;
     width: 100%;
@@ -417,11 +414,16 @@ template {
   }
   header div.headerContent {
     display: flex;
-    align-items: baseline;
+    gap: 8px;
+    align-items: end;
     padding: 1rem;
   }
-  header div.headerContent h1 {
+  header div.headerContent div h1 {
     margin: 0;
+  }
+  header div.headerContent div h2 {
+    margin: 0;
+    font-size: 18px;
   }
   nav {
     max-width: 75rem;
@@ -448,17 +450,17 @@ template {
   main {
     background-color: #e9f5f9;
   }
+  main .hero {
+    width: 100%;
+  }
+  main .brain {
+    width: 100%;
+  }
   main h1 {
     margin-left: 1rem;
   }
   main p {
     padding: 1rem 2vw;
-  }
-  .hero {
-    width: 100%;
-  }
-  .brain {
-    width: 100%;
   }
   footer {
     background-color: #2596be;
@@ -476,7 +478,7 @@ template {
 nav,
 main,
 footer {
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
   }
   body {
@@ -530,11 +532,17 @@ footer {
     margin-left: 2%;
     padding-bottom: 0.5rem;
   }
-  main {
-    background-color: #e9f5f9;
+  main .hero {
+    height: 25%;
+    width: 100%;
+  }
+  main .brain {
+    width: 50%;
+    float: right;
+    margin: 1rem;
   }
   main h1 {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   main h2 {
     margin: 0.5rem;
@@ -542,21 +550,13 @@ footer {
   main p {
     margin: 0.5rem;
   }
-  .hero {
-    width: 100%;
-    height: 25%;
-  }
-  .brain {
-    width: 50%;
-    float: right;
-    margin: 1rem;
-  }
   footer {
     background-color: #2596be;
     color: white;
     text-align: center;
     max-width: 75rem;
     clear: both;
+    padding: 6px;
   }
 }
 /* end of media query */
@@ -564,11 +564,8 @@ footer {
   /* end of media query */
 }
 @media only screen and (min-width: 1028px) and (min-width: 1028px) {
-  body {
-    font-family: "Roboto", sans-serif;
-  }
   .wrapper {
-    max-width: 50rem;
+    max-width: 75rem;
     margin: 0 auto;
   }
   nav ul {
@@ -592,14 +589,6 @@ footer {
     width: 33%;
     float: right;
     margin: 1rem;
-  }
-  footer {
-    background-color: #2596be;
-    color: white;
-    text-align: center;
-    max-width: 75rem;
-    clear: both;
-    margin: 0;
   }
 }
 /* end of media query*//*# sourceMappingURL=style.css.map */
