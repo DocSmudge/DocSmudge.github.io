@@ -1,0 +1,64 @@
+//figure out white space between header and nav bar
+* {
+    margin: 0;
+}
+header {
+    max-width: 71.25rem;
+    display: grid;
+    grid-template-columns: 130px auto;
+
+    img {
+        margin-left: 25px;
+    }
+    div {
+        h1 {
+            margin: 25px 0px 0px 0px;
+            font-size: 3rem;
+        }
+        h2 {
+            margin: 0;
+        }
+    }
+}
+nav {
+    max-width: 71.25rem;
+    background-color: darken(green, 5%);
+    ul {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+            text-align: right;
+            padding: 8px 0px 8px 0px;
+            font-size: x-large;
+        }
+        li a {
+            text-decoration: none;
+            padding: 1rem;
+            color: black;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        li.active a {
+            background-color: lighten(yellow, 25%);
+            border: solid 1px black;
+            display: block;
+        }
+        a {
+        }
+    }
+}
+main {
+    max-width: 71.25rem;
+    div.figures {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.figures figure {
+        flex-basis: 96%;
+        margin: 1rem 2%;
+    }
+    div.figures figure img {
+        width: 100%;
+    }
+}

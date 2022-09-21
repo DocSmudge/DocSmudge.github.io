@@ -1,0 +1,8 @@
+@import "normalize.scss";
+@import "small.scss";
+@media only screen and (min-width: 560px) {
+    @import "medium.scss";
+} /* end of media query */
+@media only screen and (min-width: 1028px) {
+    @import "large.scss";
+} /* end of media query*/
