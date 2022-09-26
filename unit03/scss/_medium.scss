@@ -1,11 +1,19 @@
 @media only screen and(min-width: 560px) {
-} //end of media query
-main {
-    div.figures figure {
-        flex-basis: 46%;
+    nav {
+        .container {
+            display: flex;
+            // justify-content: center;
+            float: right;
+            background-color: gray;
+        }
     }
-}
-// div.figures figure img {
-//     width: 200px;
-//     height: 200px;
-// }
+
+    body {
+        color: purple;
+    }
+    main {
+        div.figures figure {
+            flex-basis: 29%;
+        }
+    }
+} //end of media query

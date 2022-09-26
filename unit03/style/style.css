@@ -404,7 +404,11 @@ template {
 }
 
 * {
-  margin: 0;
+  margin: auto;
+}
+
+body {
+  color: blue;
 }
 
 header {
@@ -457,16 +461,41 @@ main div.figures {
   flex-wrap: wrap;
 }
 main div.figures figure {
-  flex-basis: 96%;
+  flex-basis: 46%;
   margin: 1rem 2%;
 }
 main div.figures figure img {
   width: 100%;
 }
+main footer {
+  max-width: 71.25rem;
+  text-align: center;
+  background-color: green;
+  color: white;
+  height: 50px;
+  padding-top: 1 5px;
+}
 
-@media only screen and (min-width: 560px) {
-  main div.figures figure {
-    flex-basis: 46%;
+@media only screen and (min-width: 560px) and (min-width: 560px) {
+  nav .container {
+    display: flex;
+    float: right;
+    background-color: gray;
   }
-} /* end of media query */
+  body {
+    color: purple;
+  }
+  main div.figures figure {
+    flex-basis: 29%;
+  }
+}
+/* end of media query */
+@media only screen and (min-width: 1028px) and (min-width: 1028px) {
+  body {
+    color: green;
+  }
+  main div.figures figure {
+    flex-basis: 21%;
+  }
+}
 /* end of media query*//*# sourceMappingURL=style.css.map */

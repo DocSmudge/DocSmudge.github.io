@@ -1,6 +1,9 @@
 //figure out white space between header and nav bar
 * {
-    margin: 0;
+    margin: auto;
+}
+body {
+    color: blue;
 }
 header {
     max-width: 71.25rem;
@@ -55,10 +58,19 @@ main {
         flex-wrap: wrap;
     }
     div.figures figure {
-        flex-basis: 96%;
+        flex-basis: 46%;
         margin: 1rem 2%;
     }
     div.figures figure img {
         width: 100%;
+    }
+    footer {
+        max-width: 71.25rem;
+        text-align: center;
+        background-color: green;
+        color: white;
+        height: 50px;
+        padding-top: 1
+        5px;
     }
 }
