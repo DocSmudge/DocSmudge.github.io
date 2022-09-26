@@ -1,15 +1,37 @@
 @media only screen and(min-width: 560px) {
     nav {
         background-color: gray;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        height: 8vh;
+        float: right;
+        width: 100%;
+        .container {
+            display: flex;
+            width: 100%;
+            height: 8vh;
+
+            li {
+                margin: 0;
+            }
+
+            a {
+                padding: 0;
+            }
+        }
+
+        li.active a {
+            color: red;
+            background-color: white;
+            border: none;
+            padding: 0;
+            display: block;
+        }
     }
 
     body {
         color: purple;
     }
     main {
+        margin-top: 100px;
         div.figures figure {
             flex-basis: 29%;
         }

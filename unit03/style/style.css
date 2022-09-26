@@ -479,12 +479,33 @@ main footer {
 @media only screen and (min-width: 560px) and (min-width: 560px) {
   nav {
     background-color: gray;
+    height: 8vh;
+    float: right;
+    width: 100%;
+  }
+  nav .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    height: 8vh;
+  }
+  nav .container li {
+    margin: 0;
+  }
+  nav .container a {
+    padding: 0;
+  }
+  nav li.active a {
+    color: red;
+    background-color: white;
+    border: none;
+    padding: 0;
+    display: block;
   }
   body {
     color: purple;
+  }
+  main {
+    margin-top: 100px;
   }
   main div.figures figure {
     flex-basis: 29%;
