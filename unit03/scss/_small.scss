@@ -29,7 +29,7 @@ header {
 
 nav {
     max-width: 71.25rem;
-    background-color: darken(green, 5%);
+    background-color: darken(gray, 5%);
     ul {
         padding-left: 0;
         li {
@@ -41,15 +41,16 @@ nav {
         li a {
             text-decoration: none;
             padding: 1rem;
-            color: black;
+            color: white;
         }
         li a:hover {
             text-decoration: underline;
         }
         li.active a {
-            background-color: lighten(yellow, 25%);
+            background-color: lighten(black, 25%);
             border: solid 1px black;
             display: block;
+            color: white;
         }
         a {
         }
@@ -76,9 +77,7 @@ main {
         text-align: center;
         background-color: gray;
         color: black;
-        font-size: largerbody {
-            font-family: "Roboto", sans-serif;
-        }
+        font-size: larger;
         height: 50px;
         display: flex;
         justify-content: center;

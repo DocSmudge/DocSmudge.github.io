@@ -431,7 +431,7 @@ header div h3 {
 
 nav {
   max-width: 71.25rem;
-  background-color: #006700;
+  background-color: #737373;
 }
 nav ul {
   padding-left: 0;
@@ -445,15 +445,16 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 1rem;
-  color: black;
+  color: white;
 }
 nav ul li a:hover {
   text-decoration: underline;
 }
 nav ul li.active a {
-  background-color: #ffff80;
+  background-color: #404040;
   border: solid 1px black;
   display: block;
+  color: white;
 }
 main {
   max-width: 71.25rem;
@@ -477,8 +478,7 @@ main footer {
   text-align: center;
   background-color: gray;
   color: black;
-  font-size: largerbody;
-  font-size-font-family: "Roboto", sans-serif;
+  font-size: larger;
   height: 50px;
   display: flex;
   justify-content: center;
