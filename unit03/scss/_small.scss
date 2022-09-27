@@ -3,7 +3,7 @@
     margin: auto;
 }
 body {
-    color: blue;
+    font-family: "Roboto", sans-serif;
 }
 header {
     max-width: 71.25rem;
@@ -11,18 +11,22 @@ header {
     grid-template-columns: 130px auto;
 
     img {
-        margin-left: 25px;
+        // margin-left: 25px;
     }
     div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         h1 {
-            margin: 25px 0px 0px 0px;
+            margin: 0;
             font-size: 3rem;
         }
-        h2 {
+        h3 {
             margin: 0;
         }
     }
 }
+
 nav {
     max-width: 71.25rem;
     background-color: darken(green, 5%);
@@ -53,8 +57,8 @@ nav {
 }
 main {
     max-width: 71.25rem;
-    h1{
-        padding: 1rem 2%;
+    h1 {
+        padding: 0 2%;
     }
     div.figures {
         display: flex;
@@ -70,9 +74,14 @@ main {
     footer {
         max-width: 71.25rem;
         text-align: center;
-        background-color: green;
-        color: white;
+        background-color: gray;
+        color: black;
+        font-size: largerbody {
+            font-family: "Roboto", sans-serif;
+        }
         height: 50px;
-        padding-top: 1 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
