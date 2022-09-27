@@ -53,6 +53,9 @@ nav {
 }
 main {
     max-width: 71.25rem;
+    h1{
+        padding: 1rem 2%;
+    }
     div.figures {
         display: flex;
         flex-wrap: wrap;

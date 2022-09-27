@@ -456,6 +456,9 @@ nav ul li.active a {
 main {
   max-width: 71.25rem;
 }
+main h1 {
+  padding: 1rem 2%;
+}
 main div.figures {
   display: flex;
   flex-wrap: wrap;
@@ -487,18 +490,16 @@ main footer {
     display: flex;
     width: 100%;
     height: 8vh;
+    justify-content: right;
   }
   nav .container li {
     margin: 0;
+    height: 8vh;
   }
-  nav .container a {
-    padding: 0;
-  }
-  nav li.active a {
+  nav .container li.active a {
     color: red;
-    background-color: white;
+    background-color: black;
     border: none;
-    padding: 0;
     display: block;
   }
   body {
