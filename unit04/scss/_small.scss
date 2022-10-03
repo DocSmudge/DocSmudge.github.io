@@ -1,17 +1,76 @@
 body {
-    color: gray;
+    color: yellow;
 }
 //header css
 div#headerWrapper {
-    // background-color: black;
-    // color: white;
-    // font-size: 1.6rem;
-    // font-weight: $boldWeight;
-    // padding: 1rem 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2vw;
 }
 
 header {
     background-image: url(../images/header-small.jpg);
     height: 140px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h1 {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 1rem 2vw;
+        font-size: 1.4rem;
+        margin: 0;
+    }
 }
 //end header css
+//begin nav css
+div#navWrapper {
+    background-color: purple;
+}
+nav {
+    button {
+        padding: 0.5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+    } //end button
+    ul {
+        display: none;
+        padding: 0;
+        border-top: solid 1px rgba(255, 255, 255, 0.1);
+
+        li {
+            border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+            list-style-type: none;
+        }
+
+        li a {
+            display: block;
+            padding: 0.9rem 2vw;
+            text-decoration: none;
+            color: white;
+        }
+        li.active a {
+            background-color: darken(red, 8%);
+        }
+        li a:hover {
+            background-color: darken(red, 4%);
+        }
+    }
+    ul.open {
+        display: block;
+    }
+} //end nav css
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+    color: black;
+    background-color: red;
+    text-align: center;
+}//figure out footer

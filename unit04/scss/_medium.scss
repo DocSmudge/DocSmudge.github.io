@@ -3,16 +3,15 @@
         color: purple;
     }
     //header css start
-    // div#headerWrapper {
-    //     background-color: black;
-    //     color: white;
-    //     font-size: 1.6rem;
-    //     font-weight: $boldWeight;
-    //     padding: 1rem 2vw;
-    // }
-    // header {
-    //     background-image: url(../images/header-medium.jpg);
-    //     height: 240px;
-    // }
+    div#headerWrapper {
+        background-color: black;
+        color: white;
+        font-size: 1.6rem;
+        padding: 1rem 2vw;
+    }
+    header {
+        background-image: url(../images/header-medium.jpg);
+        height: 240px;
+    }
     //header css end
 } //end of media query
