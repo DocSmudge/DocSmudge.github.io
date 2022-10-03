@@ -1,0 +1,20 @@
+@media screen and (min-width: 60rem) {
+    body {
+        color: blue;
+    }
+    //begin header
+    div#headerWrapper {
+        background-color: black;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: $boldWeight;
+        padding: 1rem 2vw;
+    }
+    header {
+        background-image: url(../images/header-large.jpg);
+        height: 400px;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    //end header css
+} // end media query
