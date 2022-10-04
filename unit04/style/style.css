@@ -464,17 +464,50 @@ nav ul.open {
   display: block;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+main {
+  max-width: 960px;
+  padding: 1rem 2vw;
 }
-
-footer {
+main .cardDeck {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .cardDeck .card {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 1rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+main .cardDeck .card section {
+  background-color: #555;
+  color: white;
+  padding: 1rem 0;
+  border: 9px;
+}
+main .cardDeck .card img {
+  padding: 1rem;
+}
+main .cardDeck .card p {
+  padding: 1rem 2vw;
+}
+main .cardDeck .card a {
+  display: block;
+  background-color: blue;
+  color: white;
+  padding: 1rem 0;
+}
+main .cardDeck .card a:hover {
+  background-color: #6666ff;
+}
+main footer {
   margin-top: auto;
   color: black;
   background-color: red;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
@@ -490,6 +523,14 @@ footer {
   header {
     background-image: url(../images/header-medium.jpg);
     height: 240px;
+  }
+  main .cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+  main .cardDeck .card {
+    flex-basis: 48%;
   }
 }
 /* end of media query */
@@ -530,6 +571,13 @@ nav ul.open {
   nav ul li,
 nav ul.open li {
     border: none;
+  }
+  main .cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .cardDeck .card {
+    flex-basis: 31%;
   }
 }
 /* end of media query*//*# sourceMappingURL=style.css.map */

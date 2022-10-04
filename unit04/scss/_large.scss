@@ -37,5 +37,14 @@
                 border: none;
             }
         }
+    } //end nav
+    main {
+        .cardDeck {
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                flex-basis: 31%;
+            }
+        }
     }
 } // end media query

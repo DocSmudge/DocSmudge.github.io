@@ -14,4 +14,14 @@
         height: 240px;
     }
     //header css end
+    main {
+        .cardDeck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1%;
+            .card {
+                flex-basis: 48%;
+            }
+        }
+    }
 } //end of media query
