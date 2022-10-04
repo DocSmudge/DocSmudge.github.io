@@ -1,5 +1,5 @@
 body {
-    color: yellow;
+    font-family: "Roboto", sans-serif;
 }
 //header css
 div#headerWrapper {
@@ -22,12 +22,13 @@ header {
         padding: 1rem 2vw;
         font-size: 1.4rem;
         margin: 0;
+        color: white;
     }
 }
 //end header css
 //begin nav css
 div#navWrapper {
-    background-color: purple;
+    background-color: black;
 }
 nav {
     button {
@@ -35,6 +36,7 @@ nav {
         background: transparent;
         border: none;
         font-size: 1.5rem;
+        color: white;
     } //end button
     ul {
         display: none;
@@ -53,10 +55,10 @@ nav {
             color: white;
         }
         li.active a {
-            background-color: darken(red, 8%);
+            background-color: darken(#d4ac81, 8%);
         }
         li a:hover {
-            background-color: darken(red, 4%);
+            background-color: darken(#d4ac81, 4%);
         }
     }
     ul.open {
@@ -78,9 +80,23 @@ main {
             margin: 1rem 0;
             text-align: center;
             overflow: hidden;
+
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(-10px);
+                }
+            }
+            .foxImg {
+                animation: bounce 0.8s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
             section {
-                background-color: #555;
-                color: white;
+                background-color: #a1b183;
+                color: black;
                 padding: 1rem 0;
 
                 border: 10px - 1;
@@ -93,22 +109,27 @@ main {
             }
             a {
                 display: block;
-                background-color: blue;
-                color: white;
+                background-color: #a1b183;
+                color: black;
                 padding: 1rem 0;
             }
             a:hover {
-                background-color: lighten(blue, 20%);
+                background-color: lighten(#d4ac81, 5%);
             }
         } // end of card
     }
     footer {
         margin-top: auto;
         color: black;
-        background-color: red;
+        background-color: #d4ac81;
         text-align: center;
         position: fixed;
         bottom: 0;
+        left: 0;
         width: 100%;
-    } //figure out footer
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
