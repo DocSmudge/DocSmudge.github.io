@@ -16,11 +16,9 @@
     //header css end
     main {
         .cardDeck {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1%;
+            // gap: 2%;
             .card {
-                flex-basis: 48%;
+                flex-basis: 49%;
             }
         }
     }

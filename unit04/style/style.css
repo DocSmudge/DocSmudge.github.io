@@ -469,11 +469,16 @@ nav ul.open {
 main {
   max-width: 960px;
   padding: 1rem 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 main .cardDeck {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
 }
 main .cardDeck .card {
   border: 1px solid;
@@ -483,29 +488,24 @@ main .cardDeck .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 37rem;
 }
 main .cardDeck .card figure.svgFigure {
   width: 100%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translate(100px, 100px) img;
+  transform-width: 100%;
+  transform-height: 100%;
 }
-main .cardDeck .card figure.svgFigure img {
-  width: 100%;
-  height: 100%;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-main .cardDeck .card .foxImg {
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+main .cardDeck .card div {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
 }
 main .cardDeck .card section {
   background-color: #a1b183;
@@ -513,12 +513,10 @@ main .cardDeck .card section {
   padding: 1rem 0;
   border: 9px;
   width: 100%;
+  height: 3rem;
 }
 main .cardDeck .card img {
   padding: 1rem;
-}
-main .cardDeck .card p {
-  padding: 1rem 2vw;
 }
 main .cardDeck .card a {
   display: block;
@@ -559,13 +557,8 @@ main footer {
     background-image: url(../images/header-medium.jpg);
     height: 240px;
   }
-  main .cardDeck {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1%;
-  }
   main .cardDeck .card {
-    flex-basis: 48%;
+    flex-basis: 49%;
   }
 }
 /* end of media query */
@@ -604,12 +597,8 @@ nav ul.open {
 nav ul.open li {
     border: none;
   }
-  main .cardDeck {
-    display: flex;
-    flex-wrap: wrap;
-  }
   main .cardDeck .card {
-    flex-basis: 31%;
+    flex-basis: 32%;
   }
 }
 /* end of media query*//*# sourceMappingURL=style.css.map */

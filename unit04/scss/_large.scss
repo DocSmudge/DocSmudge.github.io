@@ -39,10 +39,8 @@
     } //end nav
     main {
         .cardDeck {
-            display: flex;
-            flex-wrap: wrap;
             .card {
-                flex-basis: 31%;
+                flex-basis: 32%;
             }
         }
     }
