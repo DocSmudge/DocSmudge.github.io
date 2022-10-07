@@ -481,6 +481,11 @@ main .cardDeck .card {
   text-align: center;
   overflow: hidden;
 }
+main .cardDeck .card .svg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -514,6 +519,9 @@ main .cardDeck .card a {
 }
 main .cardDeck .card a:hover {
   background-color: #dab994;
+}
+main svg {
+  background-size: 10;
 }
 main footer {
   margin-top: auto;

@@ -81,6 +81,11 @@ main {
             text-align: center;
             overflow: hidden;
 
+            .svg {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
             @keyframes bounce {
                 0% {
                     transform: translateY(0);
@@ -118,6 +123,9 @@ main {
             }
         } // end of card
     }
+    svg {
+        background-size: 10;
+    }
     footer {
         margin-top: auto;
         color: black;
@@ -132,4 +140,4 @@ main {
         justify-content: center;
         align-items: center;
     }
-}
+} // end main
