@@ -1,0 +1,17 @@
+@media screen and(min-width:60rem) {
+    body {
+        color: green;
+        header {
+            grid-template-columns: 51px auto auto;
+        }
+        nav {
+            button {
+                display: none;
+            } //end button
+            ul#primaryNav {
+                position: relative;
+                display: flex;
+            } //end ul
+        }
+    }
+}

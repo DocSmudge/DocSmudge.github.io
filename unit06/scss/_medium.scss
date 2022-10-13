@@ -1,0 +1,10 @@
+@media screen and(min-width:35rem) {
+    body {
+        color: purple;
+    }
+    nav {
+        ul#primaryNav {
+            width: 250px;
+        }
+    }
+} //end media query

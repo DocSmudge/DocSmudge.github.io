@@ -1,0 +1,60 @@
+body {
+    color: red;
+    font-family: "Roboto", sans-serif;
+    header {
+        max-width: 75rem;
+        div#navWrapper {
+            background-color: black;
+        }
+        nav {
+            max-width: 75rem;
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.5rem 2vw 0.5rem 2vw;
+                background: transparent;
+                border: none;
+                font-size: 1.5rem;
+            } //end button
+            ul {
+                background-color: black;
+                position: absolute;
+                right: 0;
+                display: none;
+                padding: 0;
+                border-top: solid 1px rgba(255, 255, 255, 0.1);
+                border-left: solid 1px rgba(255, 255, 255, 0.1);
+                width: 100%;
+            }
+            li {
+                border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+                list-style-type: none;
+            } //end of list items
+            li a {
+                display: block;
+                padding: 0.9rem 2vw;
+                text-decoration: none;
+                color: white;
+                text-align: right;
+            }
+            li a:hover {
+                background-color: lighten(black, 20%);
+            }
+            li.active a {
+                background-color: pink;
+                color: black;
+            }
+
+            ul.open {
+                display: block;
+            }
+        } //end of nav
+    } //end of header
+    main {
+        max-width: 75rem;
+        footer {
+            max-width: 75rem;
+        }
+    } //end of main
+} //end of body
