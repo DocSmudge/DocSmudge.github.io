@@ -1,6 +1,5 @@
 @media screen and(min-width:60rem) {
     body {
-        color: green;
         header {
             grid-template-columns: 130px auto auto;
         }
@@ -28,11 +27,11 @@
                 background-color: #eee;
                 color: black !important;
             }
-        }// end of nav
-        main{
-            div.figures figure{
+        } // end of nav
+        main {
+            div.figures figure {
                 flex-basis: 21%;
             }
         }
-    }// end of body
+    } // end of body
 }

@@ -404,7 +404,6 @@ template {
 }
 
 body {
-  color: red;
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -415,6 +414,7 @@ body header {
 }
 body header nav {
   max-width: 75rem;
+  z-index: 10;
 }
 body header nav button {
   position: absolute;
@@ -464,8 +464,33 @@ body main div.figures {
   display: flex;
   flex-wrap: wrap;
 }
+body main div.figures figure.myArc img {
+  float: right;
+  shape-outside: circle(100% at 100% 0%);
+  clip-path: circle(100% at 100% 0%);
+  margin: 0.5rem;
+}
+body main div.figures figure.myPolygon img {
+  float: left;
+  shape-outside: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  margin: 0.5rem;
+}
+body main div.figures figure.myCircle img {
+  float: left;
+  shape-outside: circle(100% at 100% 0%);
+  clip-path: circle(100% at 100% 0%);
+  margin: 0.5rem;
+}
+body main div.figures figure.mySecondArc img {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  shape-outside: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
 body main div.figures figure {
   flex-basis: 46%;
+}
+body main div.figures figure img {
+  width: 100%;
 }
 body main h1 {
   margin: 1rem;
@@ -477,20 +502,33 @@ body main p {
   margin-bottom: 1.5rem;
   margin-left: 1rem;
 }
+body main section.theGallery figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 58.3%;
+  position: relative;
+  margin: 0;
+}
+body main section.theGallery figure img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
 body main footer {
   max-width: 75rem;
   background-color: black;
   color: white;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 0%;
+  height: 30px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body {
-    color: purple;
-  }
   nav ul#primaryNav {
     width: 250px;
   }
@@ -500,9 +538,6 @@ body main footer {
   }
 }
 @media only screen and (min-width: 60rem) and (min-width: 60rem) {
-  body {
-    color: green;
-  }
   body header {
     grid-template-columns: 130px auto auto;
   }

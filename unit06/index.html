@@ -17,7 +17,7 @@
     <div id="headerWrapper">
       <header>
         <img src="images/powdLogo.png" alt="logo" />
-        <h1>Beyonce</h1>
+        <h1>Famous Bands</h1>
 
         <!-- <div id="navWrapper"> -->
         <nav>
@@ -35,45 +35,101 @@
     <main>
       <h1>Members</h1>
       <div class="figures">
-        <figure>
+        <figure class="myArc">
           <h3>Dan Drummer</h3>
+          <img alt="drummer" src="./images/drummer.jpg">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum placeat! Animi eos eius, nostrum non quos nihil numquam
             asperiores dolorem nisi modi ipsam. Nemo assumenda maiores cumque
-            molestias corporis!
+            molestias corporis!Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. At, voluptatum placeat! Animi eos eius, nostrum
+            non quos nihil numquam asperiores dolorem nisi modi ipsam. Nemo
+            assumenda maiores cumque molestias corporis!
           </p>
         </figure>
-        <figure>
+
+        <figure class="myPolygon">
           <h3>Sam Singer</h3>
+          <img alt="singer" src="./images/singer.jpg">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum placeat! Animi eos eius, nostrum non quos nihil numquam
             asperiores dolorem nisi modi ipsam. Nemo assumenda maiores cumque
-            molestias corporis!
+            molestias corporis! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. At, voluptatum placeat! Animi eos eius, nostrum
+            non quos nihil numquam asperiores dolorem nisi modi ipsam. Nemo
+            assumenda maiores cumque molestias corporis!
           </p>
         </figure>
-        <figure>
+        <figure class="myCircle">
           <h3>Grant Guitar</h3>
+          <img alt="guitar" src="./images/guitarist.jpg">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum placeat! Animi eos eius, nostrum non quos nihil numquam
             asperiores dolorem nisi modi ipsam. Nemo assumenda maiores cumque
-            molestias corporis!
+            molestias corporis! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. At, voluptatum placeat! Animi eos eius, nostrum
+            non quos nihil numquam asperiores dolorem nisi modi ipsam. Nemo
+            assumenda maiores cumque molestias corporis!
           </p>
         </figure>
-        <figure>
+        <figure class="mySecondArc">
           <h3>Bill Backup</h3>
+          <img alt="backup" src="./images/backup.jpeg">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum placeat! Animi eos eius, nostrum non quos nihil numquam
             asperiores dolorem nisi modi ipsam. Nemo assumenda maiores cumque
-            molestias corporis!
+            molestias corporis! Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. At, voluptatum placeat! Animi eos eius, nostrum
+            non quos nihil numquam asperiores dolorem nisi modi ipsam. Nemo
+            assumenda maiores cumque molestias corporis!
           </p>
         </figure>
       </div>
+      <section class="theGallery">
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert2.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert2.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert2.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert2.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert2.jpg">
+        </figure>
+        <figure>
+          <img alt="concert" class="lazy" data-src="images/concert1.jpg">
+        </figure>
+      </section>
       <footer>&copy; Gabrielle Edwards • Login</footer>
     </main>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
+        threshold: 0,
+      });
+    </script>
   </body>
 </html>
