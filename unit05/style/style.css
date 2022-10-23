@@ -407,6 +407,26 @@ body {
   color: purple;
 }
 
+header figure.logo {
+  float: left;
+  margin: 0;
+}
+
+nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: left;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  float: right;
+  width: 25%;
+}
+
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
   body {
     color: red;
