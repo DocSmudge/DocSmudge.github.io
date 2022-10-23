@@ -1,31 +1,100 @@
+* {
+    margin: auto;
+}
 body {
     color: purple;
     font-size: 16px;
+    max-width: 75rem;
+    margin: auto;
+    margin-bottom: 100px;
 }
 header {
     padding: 0.5rem 2%;
-    background-color: gray;
+    background-color: pink;
+    max-width: 75rem;
     figure.logo {
         float: left;
         margin: 0 2% 0 0;
     }
 }
+div#navWrapper {
+    background-color: black;
+    max-width: 75rem;
+}
 nav {
-    background-color: aqua;
-    display: flex;
-    justify-content: left;
+    max-width: 75rem;
+    button {
+        padding: 0.5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+    } //end button
     ul {
-        list-style-type: none;
+        display: none;
+        border-top: solid 1px rgba(255, 255, 255, 0.1);
         padding: 0;
-        margin: 0;
+
         li {
-            float: left;
-            width: 25%; // this determines height of nav bar
+            border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+            list-style-type: none;
+            a {
+                display: block;
+                padding: 0.9rem 2vw;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        li.active a {
+            background-color: lighten(pink, 4%);
+        }
+        li a:hover {
+            background: pink;
         }
     }
-}
+    ul.open {
+        display: block;
+    }
+} // end nav css
+
+// picture.photoA {
+//     display: block;
+//     width: 96%;
+//     margin: 0;
+// }
+// main picture.photoA img,
+// main picture.photoB img {
+//     width: 100%;
+// }
+// main picture.photoA div,
+// main picture.photoB div {
+//     text-align: center;
+//     font-weight: 500;
+//     color: yellow;
+// }
+// picture.photoB {
+//     display: block;
+//     float: right;
+//     width: 46%;
+//     margin: 0 2%;
+// }
 .clearfix:after {
     content: "";
     display: table;
+    clear: both;
+}
+footer {
+    max-width: 75rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 50px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    min-height: 40px;
+    align-items: center;
     clear: both;
 }

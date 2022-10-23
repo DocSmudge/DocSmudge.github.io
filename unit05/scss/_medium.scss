@@ -1,5 +1,21 @@
 @media screen and (min-width: 35rem) {
     body {
-        color: red;
+        color: blue;
     }
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: left;
+        button {
+            display: none;
+        }
+        ul,
+        ul.open {
+            margin-left: 2vw;
+            border: none;
+            display: flex;
+        }
+        li {
+        }
+    } // end nav
 }
