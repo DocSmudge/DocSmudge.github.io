@@ -1,10 +1,13 @@
 body {
     color: purple;
+    font-size: 16px;
 }
 header {
+    padding: 0.5rem 2%;
+    background-color: gray;
     figure.logo {
         float: left;
-        margin: 0;
+        margin: 0 2% 0 0;
     }
 }
 nav {
@@ -16,8 +19,13 @@ nav {
         padding: 0;
         margin: 0;
         li {
-            float: right;
+            float: left;
             width: 25%; // this determines height of nav bar
         }
     }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
