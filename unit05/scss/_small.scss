@@ -8,6 +8,7 @@ body {
     margin: auto;
     margin-bottom: 100px;
 }
+
 header {
     padding: 0.5rem 2%;
     background-color: pink;
@@ -57,27 +58,7 @@ nav {
     }
 } // end nav css
 
-// picture.photoA {
-//     display: block;
-//     width: 96%;
-//     margin: 0;
-// }
-// main picture.photoA img,
-// main picture.photoB img {
-//     width: 100%;
-// }
-// main picture.photoA div,
-// main picture.photoB div {
-//     text-align: center;
-//     font-weight: 500;
-//     color: yellow;
-// }
-// picture.photoB {
-//     display: block;
-//     float: right;
-//     width: 46%;
-//     margin: 0 2%;
-// }
+
 .clearfix:after {
     content: "";
     display: table;
