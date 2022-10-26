@@ -58,7 +58,17 @@ nav {
     }
 } // end nav css
 
-
+picture.photoA {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+}
+main picture.photoA img {
+    width: 100%;
+}
+figure.myPhoto img {
+    height: 25%;
+}
 .clearfix:after {
     content: "";
     display: table;

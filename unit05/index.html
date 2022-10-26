@@ -37,11 +37,49 @@
         </ul>
       </nav>
     </div>
-    
+
     <main>
-      <!-- I need to add text to each header image in photoshop, group the layers and then export as jpg, max quality. Export it as whatever name and then drag and drop it into my images folder. Then follow the picture tag and media query video (2:00) to make responsive hero images. After that I need to do the same process in photoshop to another headshot of the founder, and follow the last video to put  that in my code-->
+      <!-- Then follow the picture tag and media query video (2:00) to make responsive hero images. After that I need to do the same process in photoshop to another headshot of the founder, and follow the last video to put  that in my code-->
+      <picture class="photoA">
+        <source
+          media="(max-width: 450px)"
+          srcset="./images/header-assets/header450.jpg"
+        />
+        <source
+          media="(max-width: 600px)"
+          srcset="./images/header-assets/header600.jpg"
+        />
+        <source
+          media="(max-width: 750px)"
+          srcset="./images/header-assets/header750.jpg"
+        />
+        <source
+          media="(max-width: 900px)"
+          srcset="./images/header-assets/header900.jpg"
+        />
+        <source
+          media="(max-width: 1050px)"
+          srcset="./images/header-assets/header1050.jpg"
+        />
+        <img
+          src="./images/header-assets/header0.jpg"
+          alt="Underwater Restaurant"
+        />
+      </picture>
+
       <h1>Our founder</h1>
 
+      <figure class="myPhoto">
+        <img
+          src="images/founder-assets/founder3.jpeg"
+          alt="Founder"
+          size="50vw"
+          srcset="./images/founder-assets/founder300.jpg 300w"
+          srcset="./images/founder-assets/founder450.jpg 450w"
+          srcset="./images/founder-assets/founder600.jpg 600w"
+        />
+        <figcaption>Katherine, Founder and Head Chef</figcaption>
+      </figure>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint
         doloribus eveniet. Officia veniam nihil mollitia accusantium numquam
@@ -55,7 +93,6 @@
         accusantium numquam architecto nostrum, rem error reprehenderit
         temporibus necessitatibus dolorem natus doloribus explicabo voluptates.
       </p>
-       
       <footer>&copy; Gabrielle Edwards • Login</footer>
     </main>
     <script src="script.js"></script>
