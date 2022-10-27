@@ -67,7 +67,8 @@ main picture.photoA img {
     width: 100%;
 }
 figure.myPhoto img {
-    height: 25%;
+    height: auto;
+    width: 100%;
 }
 .clearfix:after {
     content: "";
