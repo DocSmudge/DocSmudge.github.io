@@ -2,11 +2,11 @@
     margin: auto;
 }
 body {
-    color: purple;
     font-size: 16px;
     max-width: 75rem;
     margin: auto;
     margin-bottom: 100px;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -74,6 +74,7 @@ picture.photoB {
     float: right;
     width: 46%;
     margin: 0 2%;
+    max-width: 75rem;
 }
 // figure.myPhoto img {
 //     height: auto;

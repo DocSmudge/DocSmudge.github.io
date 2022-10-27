@@ -408,11 +408,11 @@ template {
 }
 
 body {
-  color: purple;
   font-size: 16px;
   max-width: 75rem;
   margin: auto;
   margin-bottom: 100px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -482,6 +482,7 @@ picture.photoB {
   float: right;
   width: 46%;
   margin: 0 2%;
+  max-width: 75rem;
 }
 
 h1,
@@ -512,9 +513,6 @@ footer {
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body {
-    color: blue;
-  }
   nav {
     background-color: black;
     display: flex;
@@ -528,10 +526,5 @@ nav ul.open {
     margin-left: 2vw;
     border: none;
     display: flex;
-  }
-}
-@media only screen and (min-width: 60rem) and (min-width: 60rem) {
-  body {
-    color: green;
   }
 }/*# sourceMappingURL=style.css.map */
