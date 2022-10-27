@@ -69,7 +69,25 @@
 
       <h1>Our founder</h1>
 
-      <figure class="myPhoto">
+      <picture class="photoB">
+        <source
+          media="(max-width: 300px)"
+          srcset="/images/founder-assets/founder300.jpg"
+        />
+        <source
+          media="(max-width: 450px)"
+          srcset="/images/founder-assets/founder450.jpg"
+        />
+        <source
+          media="(max-width: 600px)"
+          srcset="/images/founder-assets/founder600.jpg"
+        />
+        <img
+          src="./images/founder-assets/founder3.jpeg"
+          alt="Picture of Our Founder"
+        />
+      </picture>
+      <!-- <figure class="myPhoto">
         <img
           src="images/founder-assets/founder3.jpeg"
           alt="Founder"
@@ -79,9 +97,9 @@
             images/founder-assets/founder450.jpg 450w,
             images/founder-assets/founder600.jpg 600w
           "
-        />
-        <figcaption>Katherine, Founder and Head Chef</figcaption>
-      </figure>
+        /> -->
+      <!-- <figcaption>Katherine, Founder and Head Chef</figcaption>
+      </figure> -->
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint
         doloribus eveniet. Officia veniam nihil mollitia accusantium numquam
