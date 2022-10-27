@@ -48,9 +48,11 @@ nav {
         }
         li.active a {
             background-color: lighten(pink, 4%);
+            color: black;
         }
         li a:hover {
             background: pink;
+            color: black;
         }
     }
     ul.open {
@@ -60,8 +62,8 @@ nav {
 
 picture.photoA {
     display: block;
-    width: 96%;
-    margin: 0 2%;
+    width: 100%;
+    // margin: 0 2%;
 }
 main picture.photoA img,
 main picture.photoB img {
@@ -77,6 +79,10 @@ picture.photoB {
 //     height: auto;
 //     width: 100%;
 // }
+h1,
+p {
+    margin-left: 1rem;
+}
 .clearfix:after {
     content: "";
     display: table;

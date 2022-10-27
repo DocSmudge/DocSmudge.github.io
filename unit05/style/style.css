@@ -457,9 +457,11 @@ nav ul li a {
 }
 nav ul li.active a {
   background-color: #ffd4dc;
+  color: black;
 }
 nav ul li a:hover {
   background: pink;
+  color: black;
 }
 nav ul.open {
   display: block;
@@ -467,8 +469,7 @@ nav ul.open {
 
 picture.photoA {
   display: block;
-  width: 96%;
-  margin: 0 2%;
+  width: 100%;
 }
 
 main picture.photoA img,
@@ -481,6 +482,11 @@ picture.photoB {
   float: right;
   width: 46%;
   margin: 0 2%;
+}
+
+h1,
+p {
+  margin-left: 1rem;
 }
 
 .clearfix:after {
