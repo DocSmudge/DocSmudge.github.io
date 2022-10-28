@@ -440,6 +440,18 @@ nav button {
   font-size: 1.5rem;
   color: white;
 }
+nav button span:nth-child(1) {
+  display: block;
+}
+nav button span:nth-child(2) {
+  display: none;
+}
+nav button.open span:nth-child(1) {
+  display: none;
+}
+nav button.open span:nth-child(2) {
+  display: block;
+}
 nav ul {
   display: none;
   border-top: solid 1px rgba(255, 255, 255, 0.1);

@@ -1,3 +1,5 @@
+//I just need to add the X on my hamburger menu and then I can submit!
+
 * {
     margin: auto;
 }
@@ -31,6 +33,19 @@ nav {
         font-size: 1.5rem;
         color: white;
     } //end button
+
+    button span:nth-child(1) {
+        display: block; // this makes the hamburger menu always appear
+    }
+    button span:nth-child(2) {
+        display: none; //this makes the X go away
+    }
+    button.open span:nth-child(1) {
+        display: none; // this makes the hamburger menu go away when its open
+    }
+    button.open span:nth-child(2) {
+        display: block; // this makes the x appear when the menu is open
+    }
     ul {
         display: none;
         border-top: solid 1px rgba(255, 255, 255, 0.1);
