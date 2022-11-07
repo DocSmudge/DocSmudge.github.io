@@ -415,6 +415,7 @@ header {
   grid-template-columns: 51px auto 44px;
   align-items: center;
   padding: 0.5rem 2vw;
+  max-width: 75rem;
 }
 header div#phone {
   display: none;
@@ -436,6 +437,7 @@ div#closex {
 
 nav {
   height: 100vh;
+  max-width: 75rem;
 }
 nav ul {
   border-bottom: 1px solid #eee;
@@ -526,14 +528,19 @@ main .jumbotron p {
 
 #footerWrapper {
   background-color: pink;
+  max-width: 75rem;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
   body {
     color: red;
   }
+  body #headerWrapper {
+    border-bottom: 1px solid #eee;
+  }
   body header {
-    grid-template-columns: 51px auto auto;
+    grid-template-columns: 150px auto auto;
+    max-width: 75rem;
   }
   body header div#phone {
     display: block;
@@ -554,6 +561,7 @@ body div#closex {
   }
   body nav {
     height: auto;
+    max-width: 75rem;
   }
   body nav ul {
     display: flex;
@@ -615,6 +623,11 @@ body div#closex {
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
   body {
     color: blue;
+  }
+  body nav ul li a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
   }
   body main .large-1 {
     flex-basis: 8.3333333333%;

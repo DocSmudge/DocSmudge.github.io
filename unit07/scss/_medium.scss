@@ -1,9 +1,12 @@
 @media screen and(min-width: 35rem) {
     body {
         color: red;
-
+        #headerWrapper {
+            border-bottom: 1px solid #eee;
+        }
         header {
-            grid-template-columns: 51px auto auto;
+            grid-template-columns: 150px auto auto;
+            max-width: 75rem;
             div#phone {
                 display: block;
                 justify-self: end;
@@ -26,6 +29,7 @@
         }
         nav {
             height: auto;
+            max-width: 75rem;
             ul {
                 display: flex;
                 justify-content: end;

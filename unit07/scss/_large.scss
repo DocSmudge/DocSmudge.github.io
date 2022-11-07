@@ -1,12 +1,21 @@
 @media screen and (min-width: 60rem) {
     body {
         color: blue;
-        main{
+
+        nav ul li a {
+            padding: 0.2rem 1rem;
+            border-radius: 10px;
+            margin: 0.5rem 0;
+        } // end nav
+
+        main {
             //-------- COLUMNS --------//
             @for $i from 1 through 12 {
                 $w: ($i/12) * 100%;
-                .large-#{$i}{flex-basis: $w;} 
-            }// end loop 
+                .large-#{$i} {
+                    flex-basis: $w;
+                }
+            } // end loop
         }
     }
 }
