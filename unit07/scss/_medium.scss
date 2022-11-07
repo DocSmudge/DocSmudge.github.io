@@ -1,12 +1,62 @@
 @media screen and(min-width: 35rem) {
     body {
         color: red;
+
+        header {
+            grid-template-columns: 51px auto auto;
+            div#phone {
+                display: block;
+                justify-self: end;
+                a {
+                    color: pink;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1rem;
+                } //end anchor
+                a:hover {
+                    color: black;
+                }
+            } //end phone
+        } //end header
+
+        //-------- NAV STUFF --------//
+        div#hamburger,
+        div#closex {
+            display: none;
+        }
+        nav {
+            height: auto;
+            ul {
+                display: flex;
+                justify-content: end;
+                border: none;
+                li {
+                    border: none;
+                }
+            }
+        }
+        //-------- STRUCTURE STUFF --------//
+        div#headerWrapper {
+            grid-row-start: 1;
+        }
+        div#navWrapper {
+            grid-row-start: 2;
+        }
+        div#mainWrapper {
+            grid-row-start: 3;
+        }
+        div#footerWrapper {
+            grid-row-start: 4;
+        }
+
         main {
             //-------- COLUMNS --------//
             @for $i from 1 through 12 {
                 $w: ($i / 12) * 100%;
-                .medium-#{$i} {flex-basis: $w;}
-            }// end loop
+                .medium-#{$i} {
+                    flex-basis: $w;
+                }
+            } // end loop
         }
     }
 }

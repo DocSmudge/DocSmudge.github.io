@@ -1,7 +1,64 @@
 body {
+    display: grid;
     color: green;
+    font-size: 16px;
+    min-width: 320px;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    align-items: center;
+    padding: 0.5rem 2vw;
+    div#phone {
+        display: none;
+    }
+} // end header
+
+//-------- NAVIGATION --------//
+
+div #hamburger a,
+div#closex a {
+    display: block;
+    padding: 0.8rem 2vw;
+    font-size: 1.5rem;
+    color: red;
+    text-decoration: none;
+    text-align: right;
+}
+
+div#closex {
+    margin-right: 2vw;
+}
+
+nav {
+    height: 100vh;
+    ul {
+        border-bottom: 1px solid #eee;
+        list-style-type: none;
+    }
+    ul li {
+        border-top: 1px solid #eee;
+    }
+    ul li a {
+        display: block;
+        color: 333;
+        padding: 0.9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }
+    ul li a:hover {
+        color: white;
+    }
+    ul li.active a {
+        background-color: lighten(salmon, 10%);
+    }
+} //end nav
+
+
+
 //-------- MAIN --------//
+
 main {
     div.social {
         background-color: black;
@@ -17,18 +74,33 @@ main {
             color: orange;
         }
     } // end social div
+
     //-------- COLUMNS --------//
-    div.flexed {
+    .flexed {
         display: flex;
         flex-wrap: wrap;
-        .column {
-            // padding: 0 $gutter;
+    }
+
+    .column {
+        padding: 0 $gutter;
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {
+            flex-basis: $w;
         }
-        @for $i from 1 through 12 {
-            $w: ($i / 12) * 100%;
-            .small-#{$i} {
-                flex-basis: $w;
-            }
-        } //end loop
+    } //end loop
+
+    .jumbotron {
+        background-color: $accent;
+        color: white;
+        p {
+            font-size: 200%;
+            padding: 1rem 0;
+        }
     }
 } // end main
+
+#footerWrapper {
+    background-color: pink;
+}

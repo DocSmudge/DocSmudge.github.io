@@ -404,7 +404,58 @@ template {
 }
 
 body {
+  display: grid;
   color: green;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 51px auto 44px;
+  align-items: center;
+  padding: 0.5rem 2vw;
+}
+header div#phone {
+  display: none;
+}
+
+div #hamburger a,
+div#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  font-size: 1.5rem;
+  color: red;
+  text-decoration: none;
+  text-align: right;
+}
+
+div#closex {
+  margin-right: 2vw;
+}
+
+nav {
+  height: 100vh;
+}
+nav ul {
+  border-bottom: 1px solid #eee;
+  list-style-type: none;
+}
+nav ul li {
+  border-top: 1px solid #eee;
+}
+nav ul li a {
+  display: block;
+  color: 333;
+  padding: 0.9rem 2vw;
+  text-decoration: none;
+  text-align: right;
+}
+nav ul li a:hover {
+  color: white;
+}
+nav ul li.active a {
+  background-color: #fcaca3;
 }
 
 main div.social {
@@ -421,50 +472,108 @@ main div.social a {
 main div.social a:hover {
   color: orange;
 }
-main div.flexed {
+main .flexed {
   display: flex;
   flex-wrap: wrap;
 }
-main div.flexed .small-1 {
+main .column {
+  padding: 0 2vw;
+}
+main .small-1 {
   flex-basis: 8.3333333333%;
 }
-main div.flexed .small-2 {
+main .small-2 {
   flex-basis: 16.6666666667%;
 }
-main div.flexed .small-3 {
+main .small-3 {
   flex-basis: 25%;
 }
-main div.flexed .small-4 {
+main .small-4 {
   flex-basis: 33.3333333333%;
 }
-main div.flexed .small-5 {
+main .small-5 {
   flex-basis: 41.6666666667%;
 }
-main div.flexed .small-6 {
+main .small-6 {
   flex-basis: 50%;
 }
-main div.flexed .small-7 {
+main .small-7 {
   flex-basis: 58.3333333333%;
 }
-main div.flexed .small-8 {
+main .small-8 {
   flex-basis: 66.6666666667%;
 }
-main div.flexed .small-9 {
+main .small-9 {
   flex-basis: 75%;
 }
-main div.flexed .small-10 {
+main .small-10 {
   flex-basis: 83.3333333333%;
 }
-main div.flexed .small-11 {
+main .small-11 {
   flex-basis: 91.6666666667%;
 }
-main div.flexed .small-12 {
+main .small-12 {
   flex-basis: 100%;
+}
+main .jumbotron {
+  background-color: #2e3338;
+  color: white;
+}
+main .jumbotron p {
+  font-size: 200%;
+  padding: 1rem 0;
+}
+
+#footerWrapper {
+  background-color: pink;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
   body {
     color: red;
+  }
+  body header {
+    grid-template-columns: 51px auto auto;
+  }
+  body header div#phone {
+    display: block;
+    justify-self: end;
+  }
+  body header div#phone a {
+    color: pink;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  body header div#phone a:hover {
+    color: black;
+  }
+  body div#hamburger,
+body div#closex {
+    display: none;
+  }
+  body nav {
+    height: auto;
+  }
+  body nav ul {
+    display: flex;
+    justify-content: end;
+    border: none;
+  }
+  body nav ul li {
+    border: none;
+  }
+  body div#headerWrapper {
+    grid-row-start: 1;
+  }
+  body div#navWrapper {
+    grid-row-start: 2;
+  }
+  body div#mainWrapper {
+    grid-row-start: 3;
+  }
+  body div#footerWrapper {
+    grid-row-start: 4;
   }
   body main .medium-1 {
     flex-basis: 8.3333333333%;
