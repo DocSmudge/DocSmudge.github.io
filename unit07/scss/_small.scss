@@ -1,5 +1,5 @@
 body {
-    color: purple;
+    color: green;
 }
 //-------- MAIN --------//
 main {
@@ -16,14 +16,21 @@ main {
         a:hover {
             color: orange;
         }
-    }// end social div
-//-------- COLUMNS --------//
-div.flexed {display:flex; flex-wrap: wrap;}
-.column {padding: 0 $gutter;}
-@for $i from 1 through 12{
-    $w: ($i / 12) * 100%;
-    .small-#{i} {flex-basis: $w;}
-}//end loop
+    } // end social div
+    //-------- COLUMNS --------//
+    div.flexed {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: red;
 
-
-}// end main
+        .column {
+            padding: 0 $gutter;
+        }
+        @for $i from 1 through 12 {
+            $w: ($i / 12) * 100%;
+            .small-#{$i} {
+                flex-basis: $w;
+            }
+        } //end loop
+    }
+} // end main
