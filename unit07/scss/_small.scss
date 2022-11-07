@@ -21,10 +21,8 @@ main {
     div.flexed {
         display: flex;
         flex-wrap: wrap;
-        background-color: red;
-
         .column {
-            padding: 0 $gutter;
+            // padding: 0 $gutter;
         }
         @for $i from 1 through 12 {
             $w: ($i / 12) * 100%;
