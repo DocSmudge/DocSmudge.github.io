@@ -1,0 +1,29 @@
+body {
+    color: purple;
+}
+//-------- MAIN --------//
+main {
+    div.social {
+        background-color: black;
+        display: flex;
+        padding: 1rem 0;
+        a {
+            flex-basis: 25%;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+        }
+        a:hover {
+            color: orange;
+        }
+    }// end social div
+//-------- COLUMNS --------//
+div.flexed {display:flex; flex-wrap: wrap;}
+.column {padding: 0 $gutter;}
+@for $i from 1 through 12{
+    $w: ($i / 12) * 100%;
+    .small-#{i} {flex-basis: $w;}
+}//end loop
+
+
+}// end main
