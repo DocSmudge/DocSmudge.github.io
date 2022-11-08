@@ -80,10 +80,44 @@ main {
         display: flex;
         flex-wrap: wrap;
     }
-
-    .column {
-        padding: 0 $gutter;
+    .bttnWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #4caf50;
+        height: 5rem;
+        text-align: center;
+        font-size: 16px;
     }
+    button {
+        border: none;
+        color: black;
+        background-color: blue;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 75%;
+        margin: 1rem;
+    }
+    .blogWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .column {
+            background-color: pink;
+            margin: 10px;
+        }
+    }
+    .readMore {
+        background-color: red;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    // .column {
+    //     padding: 0 $gutter;
+    // }
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .small-#{$i} {
@@ -91,14 +125,14 @@ main {
         }
     } //end loop
 
-    .jumbotron {
-        background-color: $accent;
-        color: white;
-        p {
-            font-size: 200%;
-            padding: 1rem 0;
-        }
-    }
+    // .jumbotron {
+    //     background-color: $accent;
+    //     color: white;
+    //     p {
+    //         font-size: 200%;
+    //         padding: 1rem 0;
+    //     }
+    // }
 } // end main
 
 #footerWrapper {
