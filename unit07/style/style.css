@@ -487,7 +487,7 @@ main .bttnWrapper {
   text-align: center;
   font-size: 16px;
 }
-main button {
+main .bttnWrapper button {
   border: none;
   color: black;
   background-color: blue;
@@ -495,7 +495,7 @@ main button {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  width: 75%;
+  width: 90%;
   margin: 1rem;
 }
 main .blogWrapper {
@@ -507,11 +507,19 @@ main .blogWrapper .column {
   background-color: pink;
   margin: 10px;
 }
+main img {
+  width: 100%;
+}
 main .readMore {
   background-color: red;
   text-align: center;
   margin: 0;
   width: 100%;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
 }
 main .small-1 {
   flex-basis: 8.3333333333%;

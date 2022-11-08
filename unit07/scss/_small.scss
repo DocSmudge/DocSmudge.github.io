@@ -88,17 +88,18 @@ main {
         height: 5rem;
         text-align: center;
         font-size: 16px;
-    }
-    button {
-        border: none;
-        color: black;
-        background-color: blue;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
-        width: 75%;
-        margin: 1rem;
+
+        button {
+            border: none;
+            color: black;
+            background-color: blue;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            width: 90%;
+            margin: 1rem;
+        }
     }
     .blogWrapper {
         display: flex;
@@ -109,11 +110,19 @@ main {
             margin: 10px;
         }
     }
+    img {
+        width: 100%;
+    }
     .readMore {
         background-color: red;
         text-align: center;
         margin: 0;
         width: 100%;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-decoration: none;
+        font-size: 16px;
     }
     // .column {
     //     padding: 0 $gutter;
