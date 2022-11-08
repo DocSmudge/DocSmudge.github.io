@@ -1,13 +1,17 @@
+* {
+}
+
 body {
     display: grid;
-    color: green;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     min-width: 320px;
+    background-color: #efeee1;
 }
 
 header {
     display: grid;
-    grid-template-columns: 51px auto 44px;
+    grid-template-columns: 150px auto 44px;
     align-items: center;
     padding: 0.5rem 2vw;
     max-width: 75rem;
@@ -23,7 +27,7 @@ div#closex a {
     display: block;
     padding: 0.8rem 2vw;
     font-size: 1.5rem;
-    color: red;
+
     text-decoration: none;
     text-align: right;
 }
@@ -36,11 +40,14 @@ nav {
     height: 100vh;
     max-width: 75rem;
     ul {
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid black;
+        width: 100%;
         list-style-type: none;
+        padding-left: 0;
     }
     ul li {
-        border-top: 1px solid #eee;
+        border-top: 1px solid black;
+        width: 100%;
     }
     ul li a {
         display: block;
@@ -48,22 +55,25 @@ nav {
         padding: 0.9rem 2vw;
         text-decoration: none;
         text-align: right;
+        font-size: larger;
     }
     ul li a:hover {
-        color: white;
+        color: black;
     }
     ul li.active a {
-        background-color: lighten(salmon, 10%);
+        background-color: lighten(#707069, 10%);
     }
 } //end nav
 
 //-------- MAIN --------//
 
 main {
+    margin: auto;
     div.social {
         background-color: black;
         display: flex;
         padding: 1rem 0;
+        margin-bottom: 25px;
         a {
             flex-basis: 25%;
             text-align: center;
@@ -79,20 +89,25 @@ main {
     .flexed {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        .column {
+            text-align: center;
+            margin: 5px;
+        }
     }
     .bttnWrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: #4caf50;
-        height: 5rem;
+        // background-color: #4caf50;
+        // height: 5rem;
         text-align: center;
         font-size: 16px;
 
         button {
             border: none;
-            color: black;
-            background-color: blue;
+            color: white;
+            background-color: #707069;
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -106,23 +121,38 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         .column {
-            background-color: pink;
+            background-color: #d6d5c9;
             margin: 10px;
+            h3,
+            p {
+                padding: 5px;
+            }
         }
     }
     img {
         width: 100%;
     }
     .readMore {
-        background-color: red;
+        background-color: #707069;
         text-align: center;
         margin: 0;
         width: 100%;
         border: none;
-        color: black;
+        color: white;
         padding: 15px 32px;
         text-decoration: none;
         font-size: 16px;
+    }
+
+    .faqWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .column {
+            background-color: #d6d5c9;
+            margin: 10px;
+            padding: 10px;
+        }
     }
     // .column {
     //     padding: 0 $gutter;
@@ -144,7 +174,16 @@ main {
     // }
 } // end main
 
-#footerWrapper {
-    background-color: pink;
-    max-width: 75rem;
+footer {
+    background-color: #707069;
+    // max-width: 75rem;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

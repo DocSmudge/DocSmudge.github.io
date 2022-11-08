@@ -1,6 +1,5 @@
 @media screen and(min-width: 35rem) {
     body {
-        color: red;
         #headerWrapper {
             border-bottom: 1px solid #eee;
         }
@@ -11,10 +10,10 @@
                 display: block;
                 justify-self: end;
                 a {
-                    color: pink;
+                    color: #707069;
                     text-decoration: none;
                     font-weight: bold;
-                    font-size: 1rem;
+                    font-size: 2rem;
                 } //end anchor
                 a:hover {
                     color: black;
@@ -32,10 +31,14 @@
             max-width: 75rem;
             ul {
                 display: flex;
-                justify-content: end;
+                justify-content: right;
                 border: none;
+
                 li {
                     border: none;
+                }
+                li.active a {
+                    background-color: lighten(red, 10%);
                 }
             }
         }
