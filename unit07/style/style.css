@@ -431,7 +431,7 @@ div#closex a {
   text-align: right;
 }
 
-div#closex {
+div#closex a {
   margin-right: 2vw;
 }
 
@@ -447,11 +447,10 @@ nav ul {
 }
 nav ul li {
   border-top: 1px solid black;
-  width: 100%;
 }
 nav ul li a {
   display: block;
-  color: 333;
+  color: black;
   padding: 0.9rem 2vw;
   text-decoration: none;
   text-align: right;
@@ -585,15 +584,16 @@ main .small-12 {
 
 footer {
   background-color: #707069;
+  max-width: 75rem;
   color: white;
   text-align: center;
-  position: fixed;
-  bottom: 0%;
+  bottom: 0;
   height: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
@@ -624,17 +624,20 @@ body div#closex {
   body nav {
     height: auto;
     max-width: 75rem;
+    background-color: #707069;
+    margin: auto;
   }
   body nav ul {
     display: flex;
-    justify-content: right;
+    justify-content: end;
     border: none;
   }
-  body nav ul li {
+  body nav ul li a {
     border: none;
+    color: white;
   }
   body nav ul li.active a {
-    background-color: #ff3333;
+    background-color: #8a8a82;
   }
   body div#headerWrapper {
     grid-row-start: 1;
@@ -686,9 +689,6 @@ body div#closex {
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
-  body nav ul li a {
-    margin: 0.5rem 0;
-  }
   body main .large-1 {
     flex-basis: 8.3333333333%;
   }

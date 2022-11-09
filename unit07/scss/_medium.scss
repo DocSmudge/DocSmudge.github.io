@@ -29,16 +29,19 @@
         nav {
             height: auto;
             max-width: 75rem;
+            background-color: #707069;
+            margin: auto;
             ul {
                 display: flex;
-                justify-content: right;
+                justify-content: end;
                 border: none;
 
-                li {
+                li a {
                     border: none;
+                    color: white;
                 }
                 li.active a {
-                    background-color: lighten(red, 10%);
+                    background-color: lighten(#707069, 10%);
                 }
             }
         }

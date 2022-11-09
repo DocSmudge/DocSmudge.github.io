@@ -32,7 +32,7 @@ div#closex a {
     text-align: right;
 }
 
-div#closex {
+div#closex a {
     margin-right: 2vw;
 }
 
@@ -47,11 +47,10 @@ nav {
     }
     ul li {
         border-top: 1px solid black;
-        width: 100%;
     }
     ul li a {
         display: block;
-        color: 333;
+        color: black;
         padding: 0.9rem 2vw;
         text-decoration: none;
         text-align: right;
@@ -176,14 +175,14 @@ main {
 
 footer {
     background-color: #707069;
-    // max-width: 75rem;
+    max-width: 75rem;
     color: white;
     text-align: center;
-    position: fixed;
-    bottom: 0%;
+    bottom: 0;
     height: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
