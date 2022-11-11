@@ -463,6 +463,10 @@ nav ul li.active a {
   background-color: #8a8a82;
 }
 
+div#navWrapper {
+  grid-row-start: 4;
+}
+
 main {
   margin: auto;
 }

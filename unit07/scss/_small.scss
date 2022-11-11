@@ -63,7 +63,9 @@ nav {
         background-color: lighten(#707069, 10%);
     }
 } //end nav
-
+div#navWrapper {
+    grid-row-start: 4;
+}
 //-------- MAIN --------//
 
 main {
