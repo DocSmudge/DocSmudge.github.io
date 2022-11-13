@@ -407,6 +407,12 @@ body {
   color: pink;
   font-family: "Roboto", sans-serif;
 }
+body header {
+  background-color: #707069;
+}
+body header img {
+  margin: 1rem;
+}
 body #navWrapper {
   background-color: pink;
 }
@@ -420,6 +426,7 @@ body #navWrapper nav ul li.active a {
 }
 body #navWrapper nav ul li a {
   display: block;
+  justify-content: left;
   padding: 0.75rem 2vw;
   font-size: 1.1rem;
   color: white;
@@ -465,6 +472,44 @@ body #navWrapper #hamburgerBtn.open .bottom {
   transform: rotate(-45deg);
   top: 48%;
 }
+body main {
+  max-width: 80rem;
+  margin: auto;
+}
+body main .stories {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "title title" "sub sub" "bottom bottom";
+}
+body main .stories span {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+body main .stories .teaser,
+body main .stories .lead {
+  padding: 0.5rem 2vw;
+}
+body main .stories .teaser img,
+body main .stories .lead img {
+  width: 100%;
+}
+body main .stories .lead {
+  grid-area: title;
+}
+body main footer {
+  background-color: #707069;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
   body {
@@ -473,19 +518,16 @@ body #navWrapper #hamburgerBtn.open .bottom {
   body nav button {
     display: none;
   }
-  body #primaryNav {
+  body #navWrapper nav ul {
     display: flex;
-  }
-  body nav ul {
-    display: initial;
     margin-left: 2%;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
-  body nav ul li {
+  body #navWrapper nav ul li {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     list-style-type: none;
   }
-  body nav ul li a {
+  body #navWrapper nav ul li a {
     display: block;
     border: none;
     font-size: 1rem;
@@ -495,9 +537,18 @@ body #navWrapper #hamburgerBtn.open .bottom {
     -webkit-transition: background 0.3s linear;
     transition: background #ffa7b6;
   }
+  body main .stories {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title" "sub sub sub" "bottom bottom bottom";
+  }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
   body {
     color: green;
+  }
+  body main .stories {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title title title first" "sub sub sub second" "bottom bottom bottom bottom";
   }
 }/*# sourceMappingURL=style.css.map */

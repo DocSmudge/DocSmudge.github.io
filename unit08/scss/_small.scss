@@ -5,6 +5,13 @@ body {
     color: pink;
     font-family: "Roboto", sans-serif;
 
+    header {
+        background-color: #707069;
+        img {
+            margin: 1rem;
+        }
+    }
+
     #navWrapper {
         background-color: pink;
         nav {
@@ -18,6 +25,7 @@ body {
             }
             ul li a {
                 display: block;
+                justify-content: left;
                 padding: 0.75rem 2vw;
                 font-size: 1.1rem;
                 color: white;
@@ -67,5 +75,49 @@ body {
                 top: 48%;
             }
         }
-    }
+    } // end nav wrapper
+    main {
+        max-width: 80rem;
+        margin: auto;
+        .stories {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "title title"
+                "sub sub"
+                "bottom bottom";
+            span {
+                display: block;
+                text-align: center;
+                font-size: 1rem;
+            }
+            .teaser,
+            .lead {
+                padding: 0.5rem 2vw;
+            }
+            .teaser img,
+            .lead img {
+                width: 100%;
+            }
+            .lead {
+                grid-area: title;
+                //grid-column: 1 / span 2;
+            }
+        }
+
+        footer {
+            background-color: #707069;
+
+            color: white;
+            text-align: center;
+            bottom: 0;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        } // end footer
+    } //end main
 } //end body
