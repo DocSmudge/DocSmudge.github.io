@@ -7,22 +7,12 @@
                 grid-template-rows: auto;
                 grid-template-areas:
                     "title title title first"
-                    "sub sub sub second"
+                    "title title title second"
                     "bottom bottom bottom bottom";
-                // .teaser {
-                //     grid-template-areas: "third third third";
-                // }
-                // .columnThree {
-                //     grid-row: 1 / span 1;
-                //     grid-column: 4;
-                //     margin: 1rem;
-                // }
-                // .columnSix {
-                //     grid-area: title second;
-                //     // grid-row: 2 / span 1;
-                //     grid-column: 4;
-                //     background-color: red;
-                // }
+            } // end stories
+            #footerWrapper footer {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
             }
         }
     }

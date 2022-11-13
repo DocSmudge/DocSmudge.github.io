@@ -105,19 +105,40 @@ body {
                 //grid-column: 1 / span 2;
             }
         }
-
-        footer {
-            background-color: #707069;
-
-            color: white;
-            text-align: center;
-            bottom: 0;
-            height: 30px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-        } // end footer
     } //end main
+    .footerWrapper {
+        width: 100%;
+    }
+    footer {
+        height: 100%;
+
+        background-color: #707069;
+        color: white;
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .sections {
+            padding-bottom: 1rem;
+        }
+        .tools {
+            padding-bottom: 1rem;
+        }
+        .shows {
+            padding-bottom: 1rem;
+        }
+        .personalities {
+            padding-bottom: 1rem;
+        }
+        h2 {
+            font-size: larger;
+            font-weight: bolder;
+            text-decoration: underline;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+        }
+    } // end footer
 } //end body

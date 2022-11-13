@@ -498,17 +498,38 @@ body main .stories .lead img {
 body main .stories .lead {
   grid-area: title;
 }
-body main footer {
+body .footerWrapper {
+  width: 100%;
+}
+body footer {
+  height: 100%;
   background-color: #707069;
   color: white;
-  text-align: center;
-  bottom: 0;
-  height: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+body footer .sections {
+  padding-bottom: 1rem;
+}
+body footer .tools {
+  padding-bottom: 1rem;
+}
+body footer .shows {
+  padding-bottom: 1rem;
+}
+body footer .personalities {
+  padding-bottom: 1rem;
+}
+body footer h2 {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
@@ -541,6 +562,10 @@ body main footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "title title title" "sub sub sub" "bottom bottom bottom";
   }
+  body #footerWrapper footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
   body {
@@ -549,6 +574,10 @@ body main footer {
   body main .stories {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "title title title first" "sub sub sub second" "bottom bottom bottom bottom";
+    grid-template-areas: "title title title first" "title title title second" "bottom bottom bottom bottom";
+  }
+  body main #footerWrapper footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 }/*# sourceMappingURL=style.css.map */

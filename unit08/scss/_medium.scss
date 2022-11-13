@@ -48,6 +48,10 @@
                 //     grid-column: 1 / span 3;
                 // }
             }
+        } // end main
+        #footerWrapper footer {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
         }
     }
 } // end media query
