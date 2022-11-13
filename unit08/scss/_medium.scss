@@ -1,5 +1,34 @@
 @media screen and(min-width:35rem) {
     body {
         color: blue;
+        // NAV STUFF
+
+        nav button {
+            display: none;
+        }
+        #primaryNav {
+            display: flex;
+        }
+        nav {
+            ul {
+                display: initial;
+                margin-left: 2%;
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            ul li {
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+                list-style-type: none;
+            }
+            ul li a {
+                display: block;
+                border: none; //undo small screen top border
+                font-size: 1rem;
+                padding: 0.9rem 1.2rem;
+                color: rgba(255, 255, 255, 1);
+                text-decoration: none;
+                -webkit-transition: background 0.3s linear;
+                transition: background darken(pink, 5%);
+            }
+        }
     }
 } // end media query

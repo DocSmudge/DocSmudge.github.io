@@ -411,11 +411,12 @@ body #navWrapper {
   background-color: pink;
 }
 body #navWrapper nav ul {
+  display: none;
   margin: 0;
   padding: 0;
 }
-body #navWrapper nav ul li .active a {
-  background-color: grey;
+body #navWrapper nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 body #navWrapper nav ul li a {
   display: block;
@@ -423,7 +424,13 @@ body #navWrapper nav ul li a {
   font-size: 1.1rem;
   color: white;
   text-decoration: none;
-  border-top: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+body #navWrapper nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body #navWrapper nav ul.open {
+  display: block;
 }
 body #navWrapper nav button {
   position: relative;
@@ -462,6 +469,31 @@ body #navWrapper #hamburgerBtn.open .bottom {
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
   body {
     color: blue;
+  }
+  body nav button {
+    display: none;
+  }
+  body #primaryNav {
+    display: flex;
+  }
+  body nav ul {
+    display: initial;
+    margin-left: 2%;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  body nav ul li {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+  }
+  body nav ul li a {
+    display: block;
+    border: none;
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    -webkit-transition: background 0.3s linear;
+    transition: background #ffa7b6;
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
