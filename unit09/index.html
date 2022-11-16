@@ -12,29 +12,54 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div id="headerWrapper">
       <header>
-        <img src="#" alt="logo" />
+        <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+        <img src="./images/boston6.jpg" alt="faded image" />
       </header>
     </div>
     <!--end header-->
     <div id="navWrapper">
       <nav>
         <ul id="primaryNav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Visit</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pay Bills</a></li>
+          <li><a href="#">Meetings</a></li>
+          <li><a href="#">Help</a></li>
         </ul>
       </nav>
     </div>
     <!-- end nav -->
     <div id="mainWrapper">
-      <main></main>
+      <main>
+         <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./images/boston1.jpg" alt="slider"><p>Boston City</p></div>
+      <div class="swiper-slide"><img src="./images/boston2.jpg" alt="slider"><p>Boston City</p></div>
+      <div class="swiper-slide"><img src="./images/boston3.jpg" alt="slider"><p>Boston City</p></div>
+      <div class="swiper-slide"><img src="./images/boston4.jpg" alt="slider"><p>Boston City</p></div>
+      <div class="swiper-slide"><img src="./images/boston5.jpg" alt="slider"><p>Boston City</p></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+      </main>
     </div>
     <!-- end main-->
     <footer>&copy; Gabrielle Edwards 2022 • Login</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

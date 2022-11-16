@@ -1,3 +1,41 @@
 body {
     color: green;
+    font-family: "Roboto", sans-serif;
+    #headerWrapper {
+        header {
+            // max-width: 64rem;
+            header img {
+                width: 100%;
+            }
+        }
+    } // end header
+    #navWrapper {
+        background-color: black;
+        width: 100%;
+        nav {
+            ul#primaryNav {
+                display: flex;
+
+                border-left: 1px solid rgba(255, 255, 255);
+                li {
+                    border-right: 1px solid rgba(255, 255, 255);
+                    list-style-type: none;
+                    a {
+                        display: block;
+                        // justify-content: left;
+                        text-decoration: none;
+                        color: white;
+                        padding: 0.75rem 2vw;
+                        font-size: 1.1rem;
+                        -webkit-transition: background 0.3s linear;
+                        transition: background lighten(white, 5%);
+                    }
+                }
+            }
+        }
+    }
+    .swiper img {
+        width: 100%;
+        height: auto;
+    }
 }

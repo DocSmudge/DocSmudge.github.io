@@ -405,15 +405,47 @@ template {
 
 body {
   color: green;
+  font-family: "Roboto", sans-serif;
+}
+body #headerWrapper header header img {
+  width: 100%;
+}
+body #navWrapper {
+  background-color: black;
+  width: 100%;
+}
+body #navWrapper nav ul#primaryNav {
+  display: flex;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+body #navWrapper nav ul#primaryNav li {
+  border-right: 1px solid rgb(255, 255, 255);
+  list-style-type: none;
+}
+body #navWrapper nav ul#primaryNav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem 2vw;
+  font-size: 1.1rem;
+  -webkit-transition: background 0.3s linear;
+  transition: background white;
+}
+body .swiper img {
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
   body {
     color: blue;
   }
+  body #navWrapper nav ul {
+    border: none;
+  }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
   body {
-    color: pink;
+    color: red;
   }
 }/*# sourceMappingURL=style.css.map */
