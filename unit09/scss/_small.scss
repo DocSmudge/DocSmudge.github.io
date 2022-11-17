@@ -3,7 +3,7 @@ body {
     font-family: "Roboto", sans-serif;
     #headerWrapper {
         header {
-            // max-width: 64rem;
+            max-width: 64rem;
             header img {
                 width: 100%;
             }
@@ -28,7 +28,7 @@ body {
                         padding: 0.75rem 2vw;
                         font-size: 1.1rem;
                         -webkit-transition: background 0.3s linear;
-                        transition: background lighten(white, 5%);
+                        transition: background lighten(white, 50%);
                     }
                 }
             }

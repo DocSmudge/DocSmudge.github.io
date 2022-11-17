@@ -407,6 +407,9 @@ body {
   color: green;
   font-family: "Roboto", sans-serif;
 }
+body #headerWrapper header {
+  max-width: 64rem;
+}
 body #headerWrapper header header img {
   width: 100%;
 }
