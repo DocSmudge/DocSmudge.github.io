@@ -12,17 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
   </head>
+
   <body>
     <div id="headerWrapper">
       <header>
         <h1>Boston City</h1>
         <h2>Where History Comes Alive</h2>
-        <img src="./images/boston6.jpg" alt="faded image" />
       </header>
     </div>
     <!--end header-->
@@ -39,28 +37,110 @@
       </nav>
     </div>
     <!-- end nav -->
+
     <div id="mainWrapper">
       <main>
-         <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="./images/boston1.jpg" alt="slider"><p>Boston City</p></div>
-      <div class="swiper-slide"><img src="./images/boston2.jpg" alt="slider"><p>Boston City</p></div>
-      <div class="swiper-slide"><img src="./images/boston3.jpg" alt="slider"><p>Boston City</p></div>
-      <div class="swiper-slide"><img src="./images/boston4.jpg" alt="slider"><p>Boston City</p></div>
-      <div class="swiper-slide"><img src="./images/boston5.jpg" alt="slider"><p>Boston City</p></div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
 
+          <!-- Slides -->
+          <picture>
+            <source
+              srcset="./images/smallboston1.jpg"
+              media="(max-width:28.12rem)"
+            />
+            <source
+              srcset="./images/boston1.jpg"
+              media="(min-width:28.12rem)"
+            />
+            <img src="./images/boston5.jpg" alt="slider" />
+            <p>Boston City</p>
+          </picture>
+
+          <picture>
+            <source
+              srcset="./images/smallboston2.jpg"
+              media="(max-width:28.12rem)"
+            />
+            <source
+              srcset="./images/boston2.jpg"
+              media="(min-width:28.12rem)"
+            />
+            <img src="./images/boston2.jpg" alt="slider" />
+            <p>Boston City</p>
+          </picture>
+
+          <picture>
+            <source
+              srcset="./images/smallboston3.jpg"
+              media="(max-width:28.12rem)"
+            />
+            <source
+              srcset="./images/boston3.jpg"
+              media="(min-width:28.12rem)"
+            />
+            <img src="./images/boston3.jpg" alt="slider" />
+            <p>Boston City</p>
+          </picture>
+
+          <picture>
+            <source
+              srcset="./images/smallboston4.jpg"
+              media="(max-width:28.12rem)"
+            />
+            <source
+              srcset="./images/boston4.jpg"
+              media="(min-width:28.12rem)"
+            />
+            <img src="./images/boston4.jpg" alt="slider" />
+            <p>Boston City</p>
+          </picture>
+
+          <picture>
+            <source
+              srcset="./images/smallboston5.jpg"
+              media="(max-width:28.12rem)"
+            />
+            <source
+              srcset="./images/boston5.jpg"
+              media="(min-width:28.12rem)"
+            />
+            <img src="./images/boston5.jpg" alt="slider" />
+            <p>Boston City</p>
+          </picture>
+        </div>
+        <div class="cards">
+          <img src="./images/house.png" alt="house logo"></img>
+          <h3>Places to stay</h3>
+        </div>
+        <h1>Plan Your Visit</h1>
       </main>
     </div>
     <!-- end main-->
     <footer>&copy; Gabrielle Edwards 2022 • Login</footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#btn").click(function () {
+        //   $("#ul-nav").slideToggle();
+        // });
+
+        $(".swiper").slick({
+          arrows: false,
+          dots: true,
+          infinite: true,
+          cssEase: "ease-in",
+          speed: 1000,
+          autoplaySpeed: 30000,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>
-<!-- Nav bar transition isn't working, hero image is not adjusting with margin-->

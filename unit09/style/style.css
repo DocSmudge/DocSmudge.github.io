@@ -406,24 +406,43 @@ template {
 body {
   color: green;
   font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  max-width: 64rem;
+  margin: auto;
+}
+body #headerWrapper {
+  background: url(../images/boston6.jpg);
 }
 body #headerWrapper header {
-  max-width: 64rem;
-}
-body #headerWrapper header header img {
   width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body #headerWrapper header h1,
+body #headerWrapper header h2 {
+  margin: 0;
+  padding-left: 1rem;
+}
+body #headerWrapper header h1 {
+  padding-top: 1rem;
 }
 body #navWrapper {
   background-color: black;
   width: 100%;
 }
+body #navWrapper nav {
+  max-width: 64rem;
+}
 body #navWrapper nav ul#primaryNav {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   border-left: 1px solid rgb(255, 255, 255);
 }
 body #navWrapper nav ul#primaryNav li {
   border-right: 1px solid rgb(255, 255, 255);
-  list-style-type: none;
 }
 body #navWrapper nav ul#primaryNav li a {
   display: block;
@@ -431,12 +450,43 @@ body #navWrapper nav ul#primaryNav li a {
   color: white;
   padding: 0.75rem 2vw;
   font-size: 1.1rem;
-  -webkit-transition: background 0.3s linear;
-  transition: background white;
 }
-body .swiper img {
+body #navWrapper nav ul#primaryNav li a:hover {
+  background-color: grey;
+  transition: ease-in-out 1s;
+}
+
+main {
+  max-width: 64rem;
+}
+main .swiper {
   width: 100%;
   height: auto;
+}
+main .swiper picture {
+  position: relative;
+}
+main .swiper picture img {
+  width: 100%;
+  display: block;
+}
+main .swiper picture p {
+  bottom: 0;
+  margin: 0;
+  padding: 0.5rem 2vw;
+  position: absolute;
+  transform: translate(-100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+main .cards:nth-child(1) {
+  background-image: url("../images/hotel.jpg");
+}
+
+footer {
+  max-width: 64rem;
 }
 
 @media only screen and (min-width: 30rem) and (min-width: 35rem) {
