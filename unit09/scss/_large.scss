@@ -1,5 +1,23 @@
 @media screen and(min-width: 60rem) {
     body {
         color: red;
+
+        div.cards {
+            gap: 1%;
+            div.card1 {
+                flex-basis: 24.1%;
+            }
+            div.card2 {
+                flex-basis: 24.1%;
+            }
+            div.card3 {
+                flex-basis: 24.1%;
+            }
+            div.card4 {
+                flex-basis: 24.1%;
+            }
+        }
+
+        // flex-basis: 32%;
     } //end body
 } //end media query

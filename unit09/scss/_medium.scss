@@ -5,8 +5,23 @@
             nav {
                 ul {
                     border: none;
-                
                 }
+            }
+        }
+        div.cards {
+            gap: 1%;
+            
+            div.card1 {
+                flex-basis: 48%;
+            }
+            div.card2 {
+                flex-basis: 48%;
+            }
+            div.card3 {
+                flex-basis: 48%;
+            }
+            div.card4 {
+                flex-basis: 48%;
             }
         }
     } //end body

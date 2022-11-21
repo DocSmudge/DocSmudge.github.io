@@ -417,7 +417,7 @@ body #headerWrapper {
 body #headerWrapper header {
   width: 100%;
   height: 90px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(160, 159, 159, 0.1);
 }
 body #headerWrapper header h1,
 body #headerWrapper header h2 {
@@ -484,14 +484,16 @@ main .swiper picture p {
 main div.cards {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 1%;
 }
-main div.cards div.card1:nth-child(1) {
+main div.cards div.card1 {
   background-repeat: no-repeat;
   background-color: #b42d25;
   background-position: center;
-  margin: 1%;
+  flex-basis: 99%;
 }
-main div.cards div.card1:nth-child(1) a {
+main div.cards div.card1 a {
   display: block;
   width: 100%;
   height: 444px;
@@ -499,7 +501,7 @@ main div.cards div.card1:nth-child(1) a {
   color: black;
   padding: 0 2%;
 }
-main div.cards div.card1:nth-child(1) a div {
+main div.cards div.card1 a div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,25 +511,25 @@ main div.cards div.card1:nth-child(1) a div {
   width: 100%;
   text-align: center;
 }
-main div.cards div.card1:nth-child(1) a:hover {
+main div.cards div.card1 a:hover {
   background-image: url("../images/hotel.jpg");
 }
-main div.cards div.card2:nth-child(2) {
+main div.cards div.card2 {
   background-color: #24b34b;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 1%;
+  flex-basis: 99%;
 }
-main div.cards div.card2:nth-child(2) a {
+main div.cards div.card2 a {
   display: block;
   width: 100%;
   height: 444px;
   padding: 0 2%;
   text-decoration: none;
-  color: red;
+  color: black;
   transition: all 0.5s ease-in;
 }
-main div.cards div.card2:nth-child(2) a div {
+main div.cards div.card2 a div {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -536,27 +538,26 @@ main div.cards div.card2:nth-child(2) a div {
   flex-direction: column;
   font-size: 2rem;
   text-align: center;
-  padding: 0.5rem;
 }
-main div.cards div.card2:nth-child(2) a:hover {
+main div.cards div.card2 a:hover {
   background-image: url("../images/walk.jpg");
 }
-main div.cards div.card3:nth-child(2) {
-  background-color: #24b34b;
+main div.cards div.card3 {
+  background-color: #003da5;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 1%;
+  flex-basis: 99%;
 }
-main div.cards div.card3:nth-child(2) a {
+main div.cards div.card3 a {
   display: block;
   width: 100%;
   height: 444px;
   padding: 0 2%;
   text-decoration: none;
-  color: red;
+  color: black;
   transition: all 0.5s ease-in;
 }
-main div.cards div.card3:nth-child(2) a div {
+main div.cards div.card3 a div {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -565,10 +566,37 @@ main div.cards div.card3:nth-child(2) a div {
   flex-direction: column;
   font-size: 2rem;
   text-align: center;
-  padding: 0.5rem;
 }
-main div.cards div.card3:nth-child(2) a:hover {
-  background-image: url("../images/walk.jpg");
+main div.cards div.card3 a:hover {
+  background-image: url("../images/city.jpg");
+}
+main div.cards div.card4 {
+  background-color: #863b96;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 99%;
+}
+main div.cards div.card4 a {
+  display: block;
+  width: 100%;
+  height: 444px;
+  padding: 0 2%;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in;
+}
+main div.cards div.card4 a div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  text-align: center;
+}
+main div.cards div.card4 a:hover {
+  background-image: url("../images/dining.jpg");
 }
 
 footer {
@@ -582,9 +610,39 @@ footer {
   body #navWrapper nav ul {
     border: none;
   }
+  body div.cards {
+    gap: 1%;
+  }
+  body div.cards div.card1 {
+    flex-basis: 48%;
+  }
+  body div.cards div.card2 {
+    flex-basis: 48%;
+  }
+  body div.cards div.card3 {
+    flex-basis: 48%;
+  }
+  body div.cards div.card4 {
+    flex-basis: 48%;
+  }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
   body {
     color: red;
+  }
+  body div.cards {
+    gap: 1%;
+  }
+  body div.cards div.card1 {
+    flex-basis: 24.1%;
+  }
+  body div.cards div.card2 {
+    flex-basis: 24.1%;
+  }
+  body div.cards div.card3 {
+    flex-basis: 24.1%;
+  }
+  body div.cards div.card4 {
+    flex-basis: 24.1%;
   }
 }/*# sourceMappingURL=style.css.map */
