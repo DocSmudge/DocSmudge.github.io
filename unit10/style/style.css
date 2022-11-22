@@ -424,8 +424,8 @@ body #headerWrapper {
   max-width: 64rem;
 }
 body header {
-  display: grid;
-  grid-template-columns: 150px 150px auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0.5rem 2vw;
@@ -449,6 +449,7 @@ body header button {
   font-size: 1.5rem;
   text-align: right;
   color: white;
+  border-style: none;
 }
 body nav {
   background-color: #eee;
@@ -478,7 +479,7 @@ body nav ul li a {
   display: block;
   padding: 0.9rem 0.5rem;
   text-align: right;
-  border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
+  border-bottom: 1px rgb(0, 0, 0) solid;
   text-decoration: none;
   color: black;
 }
@@ -507,7 +508,6 @@ body main form label.top,
 body main form div {
   display: block;
   padding-top: 1rem;
-  color: red;
   font-size: 0.8rem;
 }
 body main form label.top input,
