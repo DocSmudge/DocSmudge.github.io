@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swag Shop</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="pageWrapper">
+        <div class="content">
+    <div id="headerWrapper">
+      <header>
+        <img src="./images/powdLogo.png" />
+        <h1>Swag Shop</h1>
+        <button id="hamburgerBtn">&#9776;</button>
+      </header>
+    </div>
+    <!-- end header wrapper-->
+    <nav>
+          <div>Order Information</div>
+        <ul id="primaryNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Deals</a></li>
+          <li class="active"><a href="#">Order</a></li>
+          <li><a href="#">Customer Reviews</a></li>
+        </ul>
+      </nav>
+  
+ 
+    <main>
+      <h1>Order</h1>
+      <form method="get" actions="thanks.html">
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label class="top">First Name* <input type="text" name="fname" required /></label>
+          <label class="top">Last Name* <input type="text" name="lname" required /></label>
+          <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"/></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="xyz@email.com" required/></label>
+          <label class="top">Website <input type="url" name="url" placeholder="https://"/></label>
+        </fieldset>
+        <!-- End Customer Info Fieldset-->
+        <fieldset>
+          <legend>Swag Information</legend>
+          <label class="sbs">Date Needed <input type="date" name="date" /></label>
+          <label class="sbs">Business Name <input type="text" name="text" /></label>
+          <label class="sbs">Business URL <input type="url" name="text" /></label>
+          <label class="sbs" >Color <select name="color">
+            <option value="">PLEASE SELECT</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="Pink">Pink</option>
+              <option value="red">Red</option>
+              </select>
+          <label class="sbs">Quantity <input type="number" name="text" /></label>
+          <label class="sbs">Aluminum <input type="radio" name="material" /></label>
+          <label class="sbs">Plastic <input type="radio" name="material" /></label>
+        </fieldset>
+        <!-- End Swag Info Fieldset-->
+        <fieldset>
+          <legend>Payment Information</legend>
+          <label class="top">Name On Card* <input type="text" name="name" required />
+          </label>
+          <label class="top">Card Number* <input type="number" name="name" required />
+          </label>
+          <label class="top">Expiration Date* <input type="date" name="date" required />
+          </label>
+        </fieldset>
+        <!-- End Payment Fieldset-->
+
+        <input type="submit" value="Order My Swag" class="submitBtn">
+      </form>
+    </main>
+</div><!--end content wrapper-->
+</div><!--end page wrapper-->
+<footer>&copy; Gabrielle Edwards 2022 • Login</footer>
+<script src="js/script.js"></script>
+  </body>
+</html>
