@@ -26,11 +26,27 @@
     <!--end header-->
     <div id="navWrapper">
       <nav>
+        <button id="hamburgerBtn">&#9776;</button>
         <ul id="primaryNav">
           <li class="active"><a href="#">Visit</a></li>
-          <li><a href="#">Departments</a></li>
+          <li class="parent">
+            <a href="#">Departments</a>
+            <ul>
+              <li><a href="#">Land Fill</a></li>
+              <li><a href="#">Police</a></li>
+              <li><a href="#">Parks and Rec</a></li>
+            </ul>
+          </li>
+
           <li><a href="#">Services</a></li>
-          <li><a href="#">Pay Bills</a></li>
+          <li class="parent">
+            <a href="#">Pay Bills</a>
+            <ul>
+              <li><a href="#">Water Bill</a></li>
+              <li class="active"><a href="#">Sewer Bill</a></li>
+              <li><a href="#">HOA Bill</a></li>
+            </ul>
+          </li>
           <li><a href="#">Meetings</a></li>
           <li><a href="#">Help</a></li>
         </ul>
@@ -186,5 +202,6 @@
         });
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

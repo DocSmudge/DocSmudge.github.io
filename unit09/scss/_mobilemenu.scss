@@ -1,14 +1,13 @@
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 
 // must be 1px less that the medium css breakpoint!!!
-@media only screen and (max-width: 34.9375rem) {
-	nav {
-		background-color: red;
-	}
+// @media only screen and (max-width: 34.9375rem) {
+nav {
+	background-color: black;
 
 	/* Navigation Button  -------------------------------------------------------- */
 
-	nav button {
+	button {
 		width: 100%;
 		padding: 0.4rem 2vw;
 		text-align: left;
@@ -29,7 +28,8 @@
 		// font-weight: $lightWeight;
 	}
 	#primaryNav li.active a {
-		background-color: rgba(0, 0, 0, 0.25);
+		background-color: white;
+		color: black;
 	}
 	#primaryNav li a {
 		display: block;
@@ -42,7 +42,7 @@
 		border-top: 1px solid rgba(0, 0, 0, 0.2);
 	}
 	#primaryNav li a:hover {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(255, 255, 255, 0.5);
 	}
 
 	/* Toggle the navigation bar to expand down  */

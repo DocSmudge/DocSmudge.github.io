@@ -405,7 +405,6 @@ template {
 }
 
 body {
-  color: green;
   font-family: "Roboto", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -427,6 +426,9 @@ body #headerWrapper header h2 {
 }
 body #headerWrapper header h1 {
   padding-top: 1rem;
+}
+body #headerWrapper header p {
+  padding: 0;
 }
 
 main {
@@ -573,18 +575,29 @@ main div.cards div.card4 a:hover {
 }
 
 footer {
-  max-width: 64rem;
+  background-color: black;
+  max-width: 75rem;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 @media only screen and (max-width: 34.9375rem) {
   /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
-  /* End Mobile Styles */
-}
-@media only screen and (max-width: 34.9375rem) and (max-width: 34.9375rem) {
   nav {
-    background-color: red;
+    background-color: black;
+    /* Navigation Button  -------------------------------------------------------- */
+    /* Navigation Bar -------------------------------------------------------- */
+    /* Toggle the navigation bar to expand down  */
+    /* Submenus – optional .parent class indicates dropdowns */
+    /*hide the sub menu items by default*/
   }
-  /* Navigation Button  -------------------------------------------------------- */
   nav button {
     width: 100%;
     padding: 0.4rem 2vw;
@@ -595,18 +608,18 @@ footer {
     color: #fff;
     cursor: pointer;
   }
-  /* Navigation Bar -------------------------------------------------------- */
-  #primaryNav {
+  nav #primaryNav {
     height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
     z-index: 998;
   }
-  #primaryNav li.active a {
-    background-color: rgba(0, 0, 0, 0.25);
+  nav #primaryNav li.active a {
+    background-color: white;
+    color: black;
   }
-  #primaryNav li a {
+  nav #primaryNav li a {
     display: block;
     width: 100%;
     padding: 0.75rem 2vw;
@@ -616,47 +629,102 @@ footer {
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
-  #primaryNav li a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+  nav #primaryNav li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
   }
-  /* Toggle the navigation bar to expand down  */
-  #primaryNav.open {
+  nav #primaryNav.open {
     height: auto;
   }
-  /* Submenus – optional .parent class indicates dropdowns */
-  #primaryNav > li:hover > a {
+  nav #primaryNav > li:hover > a {
     background: rgba(0, 0, 0, 0.5);
   }
-  #primaryNav li.parent > a:after {
+  nav #primaryNav li.parent > a:after {
     font-size: 0.75rem;
     content: "▼";
     color: rgba(255, 255, 255, 0.5);
     float: right;
   }
-  #primaryNav li.parent > a:hover {
+  nav #primaryNav li.parent > a:hover {
     background: rgba(0, 0, 0, 0.5);
   }
-  /*hide the sub menu items by default*/
-  #primaryNav li ul {
+  nav #primaryNav li ul {
     display: none;
     background: rgba(0, 0, 0, 0.1);
     padding: 0;
   }
-  #primaryNav li ul a {
+  nav #primaryNav li ul a {
     border-top: solid 1px rgba(0, 0, 0, 0.2);
     font-size: 14px;
     padding: 10px 5%;
   }
-  #primaryNav li:hover ul {
+  nav #primaryNav li:hover ul {
     display: block;
   }
+  /* End Mobile Styles */
 }
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body {
-    color: blue;
+  body header {
+    color: white;
   }
-  body #navWrapper nav ul {
+  body #navWrapper {
+    background-color: black;
+    width: 100%;
+  }
+  body #navWrapper nav {
+    max-width: 64rem;
+  }
+  body #navWrapper nav button {
+    display: none;
+  }
+  body #navWrapper nav ul#primaryNav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-left: 1px solid rgb(255, 255, 255);
+  }
+  body #navWrapper nav ul#primaryNav li {
+    border-right: 1px solid rgb(255, 255, 255);
+    list-style-type: none;
+  }
+  body #navWrapper nav ul#primaryNav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 2vw;
+    font-size: 1.1rem;
+  }
+  body #navWrapper nav ul#primaryNav li a:hover {
+    background-color: grey;
+    transition: ease-in-out 0.2s;
+  }
+  body #navWrapper nav ul#primaryNav li .active a {
+    background-color: white;
+    color: black;
+  }
+  body #navWrapper nav #primaryNav li.parent > a:after {
+    content: "▼";
+    font-size: 0.65rem;
+    color: white;
+    float: left;
+  }
+  body #navWrapper nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
     border: none;
+    width: 14rem;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+  }
+  body #navWrapper nav ul li ul li {
+    border-right: none;
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+  }
+  body #navWrapper nav ul li:hover ul {
+    left: auto;
+    margin-left: 0;
   }
   body div.cards {
     gap: 1%;
@@ -675,8 +743,9 @@ footer {
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 60rem) {
-  body {
-    color: red;
+  body nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
   }
   body div.cards {
     gap: 1%;
