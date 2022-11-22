@@ -1,6 +1,10 @@
 @import "normalize.scss";
 @import "small.scss";
-@media only screen and(min-width: 30rem) {
+@media only screen and(max-width: 34.9375rem) {
+    @import "mobilemenu.scss";
+}//end media query
+
+@media only screen and(min-width: 35rem) {
     @import "medium.scss";
 } //end of media query
 @media only screen and(min-width: 65rem) {

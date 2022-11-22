@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -404,7 +405,7 @@ template {
 }
 
 body {
-  color: red;
+  color: green;
   font-family: "Roboto", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -426,34 +427,6 @@ body #headerWrapper header h2 {
 }
 body #headerWrapper header h1 {
   padding-top: 1rem;
-}
-body #navWrapper {
-  background-color: black;
-  width: 100%;
-}
-body #navWrapper nav {
-  max-width: 64rem;
-}
-body #navWrapper nav ul#primaryNav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  border-left: 1px solid rgb(255, 255, 255);
-}
-body #navWrapper nav ul#primaryNav li {
-  border-right: 1px solid rgb(255, 255, 255);
-}
-body #navWrapper nav ul#primaryNav li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 0.75rem 2vw;
-  font-size: 1.1rem;
-}
-body #navWrapper nav ul#primaryNav li a:hover {
-  background-color: grey;
-  transition: ease-in-out 1s;
 }
 
 main {
@@ -603,7 +576,82 @@ footer {
   max-width: 64rem;
 }
 
-@media only screen and (min-width: 30rem) and (min-width: 35rem) {
+@media only screen and (max-width: 34.9375rem) {
+  /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+  /* End Mobile Styles */
+}
+@media only screen and (max-width: 34.9375rem) and (max-width: 34.9375rem) {
+  nav {
+    background-color: red;
+  }
+  /* Navigation Button  -------------------------------------------------------- */
+  nav button {
+    width: 100%;
+    padding: 0.4rem 2vw;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Navigation Bar -------------------------------------------------------- */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+  }
+  #primaryNav li.active a {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 2vw;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  #primaryNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "▼";
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+  }
+  #primaryNav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+  #primaryNav li ul a {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    padding: 10px 5%;
+  }
+  #primaryNav li:hover ul {
+    display: block;
+  }
+}
+@media only screen and (min-width: 35rem) and (min-width: 35rem) {
   body {
     color: blue;
   }

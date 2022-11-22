@@ -1,5 +1,5 @@
 body {
-    color: red;
+    color: green;
     font-family: "Roboto", sans-serif;
     width: 100vw;
     height: 100vh;
@@ -24,36 +24,36 @@ body {
         }
     }
 
-    #navWrapper {
-        background-color: black;
-        width: 100%;
-        nav {
-            max-width: 64rem;
-            ul#primaryNav {
-                display: flex;
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                border-left: 1px solid rgba(255, 255, 255);
-                li {
-                    border-right: 1px solid rgba(255, 255, 255);
+    // #navWrapper {
+    //     background-color: black;
+    //     width: 100%;
+    //     nav {
+    //         max-width: 64rem;
+    //         ul#primaryNav {
+    //             display: flex;
+    //             margin: 0;
+    //             padding: 0;
+    //             list-style-type: none;
+    //             border-left: 1px solid rgba(255, 255, 255);
+    //             li {
+    //                 border-right: 1px solid rgba(255, 255, 255);
 
-                    a {
-                        display: block;
-                        // justify-content: left;
-                        text-decoration: none;
-                        color: white;
-                        padding: 0.75rem 2vw;
-                        font-size: 1.1rem;
-                    }
-                    a:hover {
-                        background-color: grey;
-                        transition: ease-in-out 1s;
-                    }
-                }
-            }
-        }
-    }
+    //                 a {
+    //                     display: block;
+    //                     // justify-content: left;
+    //                     text-decoration: none;
+    //                     color: white;
+    //                     padding: 0.75rem 2vw;
+    //                     font-size: 1.1rem;
+    //                 }
+    //                 a:hover {
+    //                     background-color: grey;
+    //                     transition: ease-in-out 1s;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 main {
@@ -117,7 +117,6 @@ main {
             }
             a:hover {
                 background-image: url("../images/hotel.jpg");
-              
             }
         }
 
