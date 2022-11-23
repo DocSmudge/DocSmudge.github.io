@@ -110,10 +110,11 @@ body {
             font-size: 0.8rem;
         }
         form label.top input,
-        form label.top select {
+        form label.top select,
+        form label.sbs input {
             -webkit-appearance: none;
             display: block;
-            font: 16px;
+            // font: 16px;
             border: solid 1px #999;
             border-radius: 4px;
             padding: 0.75rem;
@@ -121,10 +122,20 @@ body {
             max-width: 20rem;
             background-color: rgba(0, 0, 0, 0.1);
         }
+        form label.sbs select {
+            display: block;
+            // font: 16px;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: 0.75rem 0.75rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            max-width: 20rem;
+        }
         form label.sbs {
             display: block;
             padding: 0.75rem 0;
             color: #555;
+            border-radius: 4px;
         }
         form input.submitBtn {
             border: none;
