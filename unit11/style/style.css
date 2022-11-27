@@ -419,11 +419,14 @@ body {
 }
 body header {
   grid-area: header;
-  background-color: green;
+  background-color: #fff8f8;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 body nav {
   grid-area: navigation;
-  background-color: red;
+  background-color: #e5f4fb;
   height: 100vh;
 }
 body nav ul {
@@ -434,7 +437,7 @@ body nav ul li {
 }
 body nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
   padding: 0.9rem 0.5rem;
   text-align: left;
@@ -442,10 +445,11 @@ body nav ul li a {
   text-decoration: none;
 }
 body nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #adb2d1;
+  color: white;
 }
 body nav li.active a {
-  background-color: grey;
+  background-color: #8c6c9c;
   color: white;
 }
 body nav a.myjump {
@@ -458,6 +462,7 @@ body div#hamburger {
   padding: 0.5rem;
   border-style: none;
   font-size: 1.5rem;
+  background-color: #e5f4fb;
 }
 body main {
   grid-area: content;
@@ -496,7 +501,15 @@ body main div.secondtech img {
 
 footer {
   grid-area: footer;
-  background-color: purple;
+  background-color: #e5f4fb;
+  text-align: center;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
@@ -522,6 +535,11 @@ footer {
   body main {
     grid-area: content;
     height: 100%;
+    max-width: 64rem;
+    margin: auto;
+  }
+  body main h1 {
+    margin-left: 1rem;
   }
   body main div.tech {
     display: grid;
@@ -558,6 +576,8 @@ footer {
     grid-column-start: 1;
     grid-row-start: 2;
     justify-self: start;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 65rem) {
@@ -571,7 +591,7 @@ footer {
     overflow: hidden;
   }
   nav#links {
-    background-color: aqua;
+    background-color: #e5f4fb;
     width: 100%;
     height: auto;
   }
@@ -590,9 +610,11 @@ footer {
     display: block;
     padding: 0.75rem 2vw;
     font-size: 1.1rem;
+    border-bottom: none;
   }
   nav#links ul li a:hover {
-    background-color: grey;
+    background-color: #adb2d1;
+    color: white;
     transition: ease-in-out 0.2s;
   }
   nav#links ul li .active a {

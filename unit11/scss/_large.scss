@@ -15,7 +15,7 @@
     }
 
     nav#links {
-        background-color: aqua;
+        background-color: #e5f4fb;
         width: 100%;
         height: auto;
         ul {
@@ -32,9 +32,11 @@
                     display: block;
                     padding: 0.75rem 2vw;
                     font-size: 1.1rem;
+                    border-bottom: none;
                 }
                 a:hover {
-                    background-color: grey;
+                    background-color: #adb2d1;
+                    color: white;
                     transition: ease-in-out 0.2s;
                 }
                 .active a {

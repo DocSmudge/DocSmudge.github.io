@@ -31,7 +31,11 @@
         main {
             grid-area: content;
             height: 100%;
-
+            max-width: 64rem;
+            margin: auto;
+            h1 {
+                margin-left: 1rem;
+            }
             div.tech {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -67,8 +71,9 @@
                     grid-column-start: 1;
                     grid-row-start: 2;
                     justify-self: start;
-                    // margin-left: 1rem;
-                    // margin-bottom: 2rem;
+
+                    margin-left: 1rem;
+                    margin-bottom: 2rem;
                 }
             }
         }
