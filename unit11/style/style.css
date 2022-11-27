@@ -403,17 +403,123 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+div#pageWrapper {
+  display: grid;
+  grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
+  margin: auto;
+}
+
 body {
   color: red;
+  margin: auto;
+}
+body header {
+  grid-area: header;
+  background-color: green;
+}
+body nav {
+  grid-area: navigation;
+  background-color: red;
+  height: 100vh;
+}
+body nav ul li {
+  list-style-type: none;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+body nav a.myjump {
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+body div#hamburger {
+  grid-area: hamburger;
+  padding: 0.5rem;
+  border-style: none;
+  font-size: 1.5rem;
+}
+body main {
+  background-color: blue;
+  grid-area: content;
+}
+body footer {
+  grid-area: footer;
+  background-color: purple;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
   body {
-    color: green;
+    color: red;
+  }
+  div#pageWrapper {
+    grid-template-areas: "header header" "navigation content" "footer footer";
+    grid-template-columns: 150px auto;
+  }
+  div#hamburger {
+    display: none;
+  }
+  a.myjump {
+    display: none;
+  }
+  nav {
+    height: auto;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    flex-basis: 25%;
+  }
+  nav ul li a {
+    padding: 0.5rem 1rem;
   }
 }
-@media only screen and (min-width: 65rem) and (min-width: 35rem) {
+@media only screen and (min-width: 65rem) and (min-width: 65rem) {
   body {
-    color: pink;
+    color: yellow;
+  }
+  div#pageWrapper {
+    grid-template-areas: "header" "navigation" "content" "footer";
+    grid-template-columns: 1fr;
+    margin: auto;
+    overflow: hidden;
+  }
+  nav#links {
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+  }
+  nav#links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-left: 1px solid rgb(0, 0, 0);
+  }
+  nav#links ul li {
+    border-right: 1px solid rgb(0, 0, 0);
+  }
+  nav#links ul li a {
+    color: black;
+    display: block;
+    padding: 0.75rem 2vw;
+    font-size: 1.1rem;
+  }
+  nav#links ul li a:hover {
+    background-color: grey;
+    transition: ease-in-out 0.2s;
+  }
+  nav#links ul li .active a {
+    background-color: white;
+    color: black;
+  }
+  main {
+    height: 100vh;
   }
 }/*# sourceMappingURL=style.css.map */

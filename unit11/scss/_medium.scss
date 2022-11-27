@@ -1,5 +1,32 @@
 @media only screen and(min-width:35rem) {
     body {
-        color: green;
+        color: red;
     }
-}//end media query
+
+    div#pageWrapper {
+        grid-template-areas:
+            "header header"
+            "navigation content"
+            "footer footer";
+        grid-template-columns: 150px auto;
+    }
+    div#hamburger {
+        display: none;
+    }
+    a.myjump {
+        display: none;
+    }
+
+    nav {
+        height: auto;
+        ul {
+            margin-left: 2%;
+            li {
+                flex-basis: 25%;
+                a {
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+} //end media query

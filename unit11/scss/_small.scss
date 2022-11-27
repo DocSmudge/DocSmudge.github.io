@@ -1,3 +1,58 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+div#pageWrapper {
+    display: grid;
+    grid-template-areas:
+        "hamburger"
+        "header"
+        "content"
+        "footer"
+        "navigation";
+
+    margin: auto;
+}
+
 body {
     color: red;
+    margin: auto;
+
+    header {
+        grid-area: header;
+        background-color: green;
+    }
+    nav {
+        grid-area: navigation;
+        background-color: red;
+        height: 100vh;
+        ul li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        a.myjump {
+            padding: 0.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+
+    div#hamburger {
+        grid-area: hamburger;
+        padding: 0.5rem;
+        border-style: none;
+        font-size: 1.5rem;
+    }
+    main {
+        background-color: blue;
+        grid-area: content;
+    }
+    footer {
+        grid-area: footer;
+        background-color: purple;
+    }
 }
