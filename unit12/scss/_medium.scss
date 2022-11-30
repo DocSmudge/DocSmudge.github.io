@@ -1,0 +1,11 @@
+@media only screen and(min-width:35rem) {
+    body {
+        color: blue;
+
+        main {
+            div#inventoryWrapper {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+} //end media query

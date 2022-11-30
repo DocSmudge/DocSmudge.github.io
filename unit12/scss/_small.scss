@@ -1,0 +1,98 @@
+body {
+    color: pink;
+    font-family: "Roboto", sans-serif;
+    header {
+        background-color: #fff8f8;
+        margin: 0;
+        h1,
+        h2 {
+            margin-left: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 1rem;
+        }
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #e5f4fb;
+        ul {
+            display: flex;
+            padding-left: 0;
+            // justify-content: center;
+            li {
+                flex-basis: 33.3%;
+                list-style-type: none;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    text-transform: uppercase;
+                    padding: 0.75rem 2vw;
+                    color: black;
+                    text-decoration: none;
+                    ion-icon {
+                        font-size: 1.5rem;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+        ul li a:hover {
+            background-color: #adb2d1;
+        }
+        li.active a {
+            background-color: #8c6c9c;
+            color: white;
+        }
+    }
+    main {
+        h2 {
+            margin: 2rem;
+        }
+        div#inventoryWrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            section {
+                justify-self: center;
+                margin: 1rem;
+
+                figure {
+                    position: relative;
+                    margin-left: 0;
+                    margin-right: 0;
+                    img {
+                        width: 100%;
+                    }
+
+                    figcaption {
+                        position: absolute;
+                        bottom: 0;
+                        width: 300px;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        color: white;
+                        padding: 0.3rem;
+                    }
+                }
+            }
+            div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-self: end;
+                span {
+                    justify-self: start;
+                    ion-icon {
+                        float: left;
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
