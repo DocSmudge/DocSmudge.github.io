@@ -464,15 +464,15 @@ body main div#inventoryWrapper section {
   justify-self: center;
   margin: 1rem;
 }
-body main div#inventoryWrapper section figure {
+body main div#inventoryWrapper section div#myCards figure {
   position: relative;
   margin-left: 0;
   margin-right: 0;
 }
-body main div#inventoryWrapper section figure img {
+body main div#inventoryWrapper section div#myCards figure img {
   width: 100%;
 }
-body main div#inventoryWrapper section figure figcaption {
+body main div#inventoryWrapper section div#myCards figure figcaption {
   position: absolute;
   bottom: 0;
   width: 300px;
@@ -480,19 +480,19 @@ body main div#inventoryWrapper section figure figcaption {
   color: white;
   padding: 0.3rem;
 }
-body main div#inventoryWrapper div {
+body main div#inventoryWrapper section div#hotelInfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: end;
 }
-body main div#inventoryWrapper div span {
+body main div#inventoryWrapper section div#hotelInfo span {
   justify-self: start;
 }
-body main div#inventoryWrapper div span ion-icon {
+body main div#inventoryWrapper section div#hotelInfo span ion-icon {
   float: left;
   font-size: 1.5rem;
 }
-body main div#inventoryWrapper div span p {
+body main div#inventoryWrapper section div#hotelInfo span p {
   padding-left: 2rem;
 }
 
