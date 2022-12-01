@@ -404,11 +404,10 @@ template {
 }
 
 body {
-  color: pink;
   font-family: "Roboto", sans-serif;
 }
 body header {
-  background-color: #fff8f8;
+  background-color: #e5f4fb;
   margin: 0;
 }
 body header h1,
@@ -447,14 +446,17 @@ body nav ul li a ion-icon {
   padding-right: 1rem;
 }
 body nav ul li a:hover {
-  background-color: #adb2d1;
+  background-color: #fff8f8;
 }
 body nav li.active a {
-  background-color: #8c6c9c;
-  color: white;
+  background-color: #adb2d1;
+  color: black;
+}
+body main {
+  padding: 3rem;
 }
 body main h2 {
-  margin: 2rem;
+  margin: 0;
 }
 body main div#inventoryWrapper {
   display: grid;
@@ -464,48 +466,41 @@ body main div#inventoryWrapper section {
   justify-self: center;
   margin: 1rem;
 }
-body main div#inventoryWrapper section div#myCards figure {
+body main div#inventoryWrapper section div.myCards figure {
   position: relative;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
 }
-body main div#inventoryWrapper section div#myCards figure img {
+body main div#inventoryWrapper section div.myCards figure img {
   width: 100%;
 }
-body main div#inventoryWrapper section div#myCards figure figcaption {
+body main div#inventoryWrapper section div.myCards figure figcaption {
   position: absolute;
   bottom: 0;
-  width: 300px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 0.3rem;
 }
-body main div#inventoryWrapper section div#hotelInfo {
+body main div#inventoryWrapper section div.hotelInfo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-self: end;
+  background-color: #fff8f8;
+  padding: 1rem;
 }
-body main div#inventoryWrapper section div#hotelInfo span {
+body main div#inventoryWrapper section div.hotelInfo span {
   justify-self: start;
 }
-body main div#inventoryWrapper section div#hotelInfo span ion-icon {
+body main div#inventoryWrapper section div.hotelInfo span ion-icon {
   float: left;
   font-size: 1.5rem;
 }
-body main div#inventoryWrapper section div#hotelInfo span p {
+body main div#inventoryWrapper section div.hotelInfo span p {
   padding-left: 2rem;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body {
-    color: blue;
-  }
   body main div#inventoryWrapper {
     grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (min-width: 65rem) and (min-width: 65rem) {
-  body {
-    color: red;
   }
 }/*# sourceMappingURL=style.css.map */
