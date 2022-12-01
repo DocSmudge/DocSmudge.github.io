@@ -1,7 +1,7 @@
 [
     {
         "name": "Southern Serenade",
-        "photo": "images/serenade.jpg",
+        "photo": "images/hotel1.jpg",
         "address": [
             "1555 North Canyon Dr.",
             "Lexington, VA 88765"
@@ -10,7 +10,7 @@
     },
     {
         "name": "The Grand America Hotel",
-        "photo": "images/america.jpg",
+        "photo": "images/hotel2.jpg",
         "address": [
             "555 Main St.",
             "Salt Lake City UT, 84111"
@@ -19,7 +19,7 @@
     },
     {
         "name": "Four Seasons",
-        "photo": "images/season.jpg",
+        "photo": "images/hotel3.jpg",
         "address": [
             "2019 Pennsylvania Ave",
             "Washington, DC 20125"
@@ -28,7 +28,7 @@
     },
     {
         "name": "Hyatt Place Washington",
-        "photo": "images/hyatt.jpg",
+        "photo": "images/hotel4.jpg",
         "address": [
             "1555 North Canyon Dr.",
             "Lexington VA 88765"
