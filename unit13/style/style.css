@@ -403,26 +403,41 @@ template {
   display: none;
 }
 
-body {
-  color: blue;
+body header {
+  background-color: rgb(214, 214, 249);
 }
-body section#weatherforecase {
+body header h1 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+body main h1,
+body main h2 {
+  text-align: center;
+}
+body main section#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
 }
+body footer {
+  background-color: rgb(214, 214, 249);
+  text-align: center;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+}
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body {
-    color: red;
-  }
   body section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 65rem) {
-  body {
-    color: red;
-  }
   body section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

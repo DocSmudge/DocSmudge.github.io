@@ -1,8 +1,32 @@
 body {
-    color: blue;
-
-    section#weatherforecase {
-        display: grid;
-        grid-template-columns: 1fr;
+    header {
+        background-color: rgb(214, 214, 249);
+        h1 {
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+    main {
+        h1,
+        h2 {
+            text-align: center;
+        }
+        section#weatherforecast {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    footer {
+        background-color: rgb(214, 214, 249);
+        text-align: center;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: fixed;
     }
 }
