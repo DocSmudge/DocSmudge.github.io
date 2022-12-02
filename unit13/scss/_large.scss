@@ -1,7 +1,11 @@
 @media only screen and(min-width:65rem) {
     body {
-        section#weatherforecast {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 75rem;
+        margin: auto;
+        main {
+            section#weatherforecast {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
         }
     }
 }

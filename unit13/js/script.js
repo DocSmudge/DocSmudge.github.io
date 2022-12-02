@@ -48,7 +48,7 @@ fetch(apiURL)
         theDayName.textContent = myweekday[forecastDayNumber];
 
         let theTemp = document.createElement("p");
-        theTemp.textContent = weatherInfo.list[i].main.temp +"\xB0";
+        theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
         let iconcode = weatherInfo.list[i].weather[0].icon;
         let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
         let theicon = document.createElement("img");
@@ -57,7 +57,7 @@ fetch(apiURL)
         theDay.appendChild(theDayName);
         theDay.appendChild(theTemp);
         theDay.appendChild(theicon);
-        document.getElementById("weatherforecast").appendChild("theDay");
+        document.getElementById("weatherforecast").appendChild(theDay);
       } //end if
     } //end for
   });

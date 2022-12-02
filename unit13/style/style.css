@@ -403,21 +403,56 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body header {
   background-color: rgb(214, 214, 249);
+  width: 100%;
 }
 body header h1 {
   margin: 0;
   padding: 1rem;
   text-align: center;
 }
+body main {
+  height: 100vh;
+}
 body main h1,
 body main h2 {
   text-align: center;
 }
+body main h2 {
+  margin-bottom: 5rem;
+}
 body main section#weatherforecast {
   display: grid;
   grid-template-columns: 1fr;
+}
+body main section#weatherforecast div {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: rgb(214, 214, 249);
+  margin: 0.5rem;
+}
+body main section#weatherforecast div span,
+body main section#weatherforecast div p,
+body main section#weatherforecast div img {
+  padding: 1rem;
+}
+body main section#weatherforecast div span {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+body main section#weatherforecast div p {
+  font-size: 2rem;
 }
 body footer {
   background-color: rgb(214, 214, 249);
@@ -429,16 +464,20 @@ body footer {
   justify-content: center;
   align-items: center;
   margin: auto;
-  position: fixed;
+  position: relative;
 }
 
 @media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body section#weatherforecast {
+  body main section#weatherforecast {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media only screen and (min-width: 65rem) and (min-width: 65rem) {
-  body section#weatherforecast {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  body {
+    max-width: 75rem;
+    margin: auto;
+  }
+  body main section#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
