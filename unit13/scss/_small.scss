@@ -1,0 +1,8 @@
+body {
+    color: blue;
+
+    section#weatherforecase {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
