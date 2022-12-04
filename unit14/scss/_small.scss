@@ -1,5 +1,4 @@
 body {
-    color: red;
     background-color: rgb(239, 239, 239);
     font-family: "Roboto", sans-serif;
     header {
@@ -62,6 +61,7 @@ body {
         margin-bottom: 2rem;
     }
     div.content {
+        color: white;
         max-width: 59rem;
         background-color: black;
         margin: auto;
@@ -74,14 +74,19 @@ body {
         width: 100%;
         grid-column-start: 1;
         grid-column-end: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
         h3 {
-            padding: 0.5rem;
+            padding: 0;
         }
         p {
-            padding: 0.5rem;
+            padding: 0;
         }
         ul {
-            padding: 0.5rem;
+            padding: 0;
+            padding-left: 1rem;
         }
     } // end expectContent Div
 
@@ -106,6 +111,7 @@ body {
         max-width: 59rem;
         margin: auto;
         border-bottom: solid 1px rgba(0, 0, 0, 1);
+        padding-left: 1rem;
     }
     div.aboutUs {
         padding-top: 0.5rem;
@@ -114,12 +120,21 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1%;
         div.imgDiv {
-            margin: 1rem 2%;
-            flex-basis: 46%;
-            h3 {
-                margin-top: 0.5rem;
-                margin-bottom: 0.25rem;
+            flex-basis: 100%;
+            margin-bottom: 1.5rem;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            div {
+                padding-left: 1rem;
+                h3 {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.25rem;
+                }
             }
         }
     } // end aboutUs Div styles
@@ -130,6 +145,7 @@ body {
         // background-color: pink;
         // display: grid;
         // grid-template-columns: 1fr;
+        padding-bottom: 1rem;
         div.gridWithThree {
             // display: grid;
             // grid-template-columns: 1fr;
@@ -140,34 +156,55 @@ body {
                 // margin-top: 2rem;
                 display: flex;
                 flex-direction: column;
-                margin-left: 1rem;
-                margin-right: 1rem;
+                // margin-left: 1rem;
+                // margin-right: 1rem;
                 margin-bottom: 1rem;
-                h3 {
+                h3,
+                p {
                     margin-top: 0.5rem;
+                    margin-left: 1rem;
                 }
             }
             div.infoAndImgDivThree {
-                margin-left: 0.5rem;
+                margin-left: 1rem;
                 grid-row-start: 2;
                 grid-column-start: 1;
                 grid-column-end: 3;
             }
         }
         div.divWithOne {
-            margin-top: 1rem;
-            div.infoAndImgDiv {
-                display: flex;
-                flex-direction: column;
-                margin: auto;
+            margin-top: 0.5rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                position: relative;
             }
-            button {
-                background-color: rgb(14, 121, 188);
-                color: white;
-                padding: 14px 40px;
-                border-radius: 20px;
-                border: none;
-                font-size: 20px;
+
+            div.infoAndImgDiv {
+                position: absolute;
+                bottom: 0.75rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                button {
+                    width: 15rem;
+                    height: 44px;
+                    background-color: blue;
+                    border: none;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: darken(blue, 5%);
+                }
+                p {
+                    margin: 0.5rem 0;
+                }
             }
         }
     } // end secondContent Div styles
@@ -176,11 +213,34 @@ body {
         max-width: 59rem;
         margin: auto;
         background-color: white;
-        // display: flex;
-        // flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        height: 150px;
 
         img {
+            margin: auto;
             padding: 0.4rem;
         }
     } // end logosDiv styles
+}
+div.footerWrapper {
+    background: rgb(4, 128, 177);
+    background: linear-gradient(180deg, rgb(3, 19, 122) 0%, rgba(1, 66, 103, 1) 84%);
+    footer {
+        margin-top: 1rem;
+        color: white;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        p {
+            margin: 0;
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            a:hover {
+                text-decoration: initial;
+            }
+        }
+    }
 }

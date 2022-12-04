@@ -1,12 +1,16 @@
 @media only screen and(min-width:35rem) {
     body {
-        color: purple;
         div.aboutUs {
             div.imgDiv {
                 margin: 0.5rem;
                 flex-basis: 33%;
+
+                div {
+                    padding-left: 0;
+                }
             }
         }
+
         div.secondContent {
             display: grid;
             grid-template-columns: 1fr;
@@ -27,7 +31,8 @@
                 }
             }
             div.divWithOne {
-                margin-top: 2rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
         }
     }
