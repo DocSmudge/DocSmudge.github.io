@@ -1,5 +1,30 @@
 @media only screen and(min-width:65rem) {
     body {
         color: green;
+
+        div.aboutUs {
+            div.imgDiv {
+                margin: 0.5rem;
+                flex-basis: 21%;
+            }
+        }
+        div.secondContent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            div.infoAndImgDiv {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                // margin-top: 2rem;
+            }
+            div.infoAndImgDivThree {
+                margin-left: 0.5rem;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+        div.divWithOne {
+            margin-top: 0;
+        }
     }
 }

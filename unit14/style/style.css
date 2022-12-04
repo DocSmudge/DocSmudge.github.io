@@ -405,6 +405,7 @@ template {
 
 body {
   color: red;
+  background-color: rgb(239, 239, 239);
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -451,41 +452,176 @@ body div.heroImg {
   display: grid;
   justify-self: center;
   margin: auto;
+  padding-bottom: 1rem;
 }
-body div.fullWidthContent {
+body div.heroImg img {
+  width: 100%;
+}
+body div.backgroundColor {
   background-color: black;
+  margin-bottom: 2rem;
+}
+body div.content {
+  max-width: 59rem;
+  background-color: black;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 body div.expectContent {
-  grid-column-start: 2;
-  grid-column-end: 6;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+body div.expectContent h3 {
+  padding: 0.5rem;
+}
+body div.expectContent p {
+  padding: 0.5rem;
+}
+body div.expectContent ul {
+  padding: 0.5rem;
 }
 body div.ourFormula {
-  grid-column-start: 6;
+  width: 100%;
+  grid-column-start: 7;
   justify-self: end;
 }
-body div.aboutUs {
+body div.ourFormula h3 {
+  padding: 0.5rem;
+  text-align: end;
+}
+body div.ourFormula h2 {
+  padding: 0.5rem;
+  text-align: end;
+}
+body div.ourFormula p {
+  padding: 0.2rem;
+  text-align: end;
+}
+body div.titleDiv {
   max-width: 59rem;
   margin: auto;
+  border-bottom: solid 1px rgb(0, 0, 0);
+}
+body div.aboutUs {
+  padding-top: 0.5rem;
+  max-width: 59rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body div.aboutUs div.imgDiv {
+  margin: 1rem 2%;
+  flex-basis: 46%;
+}
+body div.aboutUs div.imgDiv h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 body div.secondContent {
   max-width: 59rem;
   margin: auto;
 }
+body div.secondContent div.gridWithThree {
+  grid-template-rows: auto;
+}
+body div.secondContent div.gridWithThree div.infoAndImgDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+body div.secondContent div.gridWithThree div.infoAndImgDiv h3 {
+  margin-top: 0.5rem;
+}
+body div.secondContent div.gridWithThree div.infoAndImgDivThree {
+  margin-left: 0.5rem;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+body div.secondContent div.divWithOne {
+  margin-top: 1rem;
+}
+body div.secondContent div.divWithOne div.infoAndImgDiv {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+body div.secondContent div.divWithOne button {
+  background-color: rgb(14, 121, 188);
+  color: white;
+  padding: 14px 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
 body div.logosDiv {
   max-width: 59rem;
   margin: auto;
+  background-color: white;
+}
+body div.logosDiv img {
+  padding: 0.4rem;
 }
 
 @media only screen and (min-width: 35rem) {
   body {
     color: purple;
   }
+  body div.aboutUs div.imgDiv {
+    margin: 0.5rem;
+    flex-basis: 33%;
+  }
+  body div.secondContent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  body div.secondContent div.gridWithThree {
+    display: grid;
+    margin-top: 1rem;
+  }
+  body div.secondContent div.gridWithThree h3 {
+    margin-top: 1rem;
+  }
+  body div.secondContent div.gridWithThree div.infoAndImgDiv img {
+    display: block;
+    margin: auto;
+  }
+  body div.secondContent div.gridWithThree div.infoAndImgDivThree {
+    margin-top: 1rem;
+  }
+  body div.secondContent div.divWithOne {
+    margin-top: 2rem;
+  }
 }
 @media only screen and (min-width: 65rem) {
   body {
     color: green;
+  }
+  body div.aboutUs div.imgDiv {
+    margin: 0.5rem;
+    flex-basis: 21%;
+  }
+  body div.secondContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body div.secondContent div.infoAndImgDiv {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  body div.secondContent div.infoAndImgDivThree {
+    margin-left: 0.5rem;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  body div.divWithOne {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
