@@ -405,29 +405,77 @@ template {
 
 body {
   color: red;
+  font-family: "Roboto", sans-serif;
 }
 body header {
-  max-width: 64rem;
+  max-width: 59rem;
   margin: auto;
+}
+body header div.headerContent {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  padding: 1rem;
+}
+body header div.headerContent header img {
+  float: left;
+}
+body header div.headerContent div h1 {
+  margin: 0;
+}
+body header div.headerContent div h2 {
+  margin: 0;
 }
 body nav {
-  max-width: 64rem;
+  max-width: 59rem;
   margin: auto;
+}
+body nav ul.container {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  border-top: solid 1px rgb(0, 0, 0);
+  padding: 0;
+}
+body nav ul.container li a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2vw;
+  color: gray;
+}
+body nav ul.container li a img {
+  padding-right: 0.5rem;
 }
 body div.heroImg {
-  max-width: 64rem;
+  max-width: 59rem;
+  display: grid;
+  justify-self: center;
   margin: auto;
 }
+body div.fullWidthContent {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+body div.expectContent {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+body div.ourFormula {
+  grid-column-start: 6;
+  justify-self: end;
+}
 body div.aboutUs {
-  max-width: 64rem;
+  max-width: 59rem;
   margin: auto;
 }
 body div.secondContent {
-  max-width: 64rem;
+  max-width: 59rem;
   margin: auto;
 }
 body div.logosDiv {
-  max-width: 64rem;
+  max-width: 59rem;
   margin: auto;
 }
 

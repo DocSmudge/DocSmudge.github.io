@@ -1,27 +1,86 @@
 body {
     color: red;
+    font-family: "Roboto", sans-serif;
     header {
-        max-width: 64rem;
+        max-width: 59rem;
         margin: auto;
-    }
+
+        div.headerContent {
+            display: flex;
+            gap: 8px;
+            align-items: end;
+            padding: 1rem;
+            header img {
+                float: left;
+            }
+            div {
+                h1 {
+                    margin: 0;
+                }
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+    } // end header styles
+
     nav {
-        max-width: 64rem;
+        max-width: 59rem;
         margin: auto;
-    }
+        ul.container {
+            display: flex;
+            justify-content: right;
+            list-style-type: none;
+            border-top: solid 1px rgba(0, 0, 0, 1);
+            padding: 0;
+            li a {
+                text-decoration: none;
+                display: block;
+                padding: 1rem 2vw;
+                color: gray;
+                img {
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    } // end nav styles
+
     div.heroImg {
-        max-width: 64rem;
+        max-width: 59rem;
+        display: grid;
+        justify-self: center;
         margin: auto;
+    } // end heroImg Div styles
+
+    div.fullWidthContent {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    } // end fullWidthContent Div
+
+    div.expectContent {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    } // end expectContent Div
+
+    div.ourFormula {
+        grid-column-start: 6;
+        justify-self: end;
     }
+
     div.aboutUs {
-        max-width: 64rem;
+        max-width: 59rem;
         margin: auto;
-    }
+    } // end aboutUs Div styles
+
     div.secondContent {
-        max-width: 64rem;
+        max-width: 59rem;
         margin: auto;
-    }
+    } // end secondContent Div styles
+
     div.logosDiv {
-        max-width: 64rem;
+        max-width: 59rem;
         margin: auto;
-    }
+    } // end logosDiv styles
 }
