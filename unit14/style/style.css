@@ -480,6 +480,7 @@ body div.expectContent {
 }
 body div.expectContent h3 {
   padding: 0;
+  color: rgb(228, 220, 1);
 }
 body div.expectContent p {
   padding: 0;
@@ -496,10 +497,12 @@ body div.ourFormula {
 body div.ourFormula h3 {
   padding: 0.5rem;
   text-align: end;
+  color: rgb(228, 220, 1);
 }
 body div.ourFormula h2 {
   padding: 0.5rem;
   text-align: end;
+  color: rgb(228, 220, 1);
 }
 body div.ourFormula p {
   padding: 0.2rem;
