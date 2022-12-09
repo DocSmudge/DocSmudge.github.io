@@ -405,302 +405,67 @@ template {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  max-width: 64rem;
-  margin: auto;
+  color: red;
 }
-body #headerWrapper {
-  background: url(../images/boston6.jpg);
+body header {
+  background-color: pink;
 }
-body #headerWrapper header {
-  width: 100%;
-  height: 90px;
-  background-color: rgba(160, 159, 159, 0.1);
+body nav {
+  background-color: rgb(147, 147, 255);
 }
-body #headerWrapper header h1,
-body #headerWrapper header h2 {
-  margin: 0;
-  padding-left: 1rem;
-}
-body #headerWrapper header h1 {
-  padding-top: 1rem;
-}
-body #headerWrapper header p {
-  padding: 0;
-}
-
-main {
-  max-width: 64rem;
-}
-main .swiper {
-  width: 100%;
-  height: auto;
-}
-main .swiper picture {
-  position: relative;
-}
-main .swiper picture img {
-  width: 100%;
-  display: block;
-}
-main .swiper picture p {
-  bottom: 0;
-  margin: 0;
-  padding: 0.5rem 2vw;
-  position: absolute;
-  transform: translate(-100%);
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: white;
-  width: 100%;
-}
-main div.cards {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 1%;
-}
-main div.cards div.card1 {
-  background-repeat: no-repeat;
-  background-color: #b42d25;
-  background-position: center;
-  flex-basis: 99%;
-}
-main div.cards div.card1 a {
-  display: block;
-  width: 100%;
-  height: 444px;
-  text-decoration: none;
-  color: black;
-  padding: 0 2%;
-}
-main div.cards div.card1 a div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
-}
-main div.cards div.card1 a:hover {
-  background-image: url("../images/hotel.jpg");
-}
-main div.cards div.card2 {
-  background-color: #24b34b;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-basis: 99%;
-}
-main div.cards div.card2 a {
-  display: block;
-  width: 100%;
-  height: 444px;
-  padding: 0 2%;
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in;
-}
-main div.cards div.card2 a div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-  font-size: 2rem;
-  text-align: center;
-}
-main div.cards div.card2 a:hover {
-  background-image: url("../images/walk.jpg");
-}
-main div.cards div.card3 {
-  background-color: #003da5;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-basis: 99%;
-}
-main div.cards div.card3 a {
-  display: block;
-  width: 100%;
-  height: 444px;
-  padding: 0 2%;
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in;
-}
-main div.cards div.card3 a div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-  font-size: 2rem;
-  text-align: center;
-}
-main div.cards div.card3 a:hover {
-  background-image: url("../images/city.jpg");
-}
-main div.cards div.card4 {
-  background-color: #863b96;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-basis: 99%;
-}
-main div.cards div.card4 a {
-  display: block;
-  width: 100%;
-  height: 444px;
-  padding: 0 2%;
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s ease-in;
-}
-main div.cards div.card4 a div {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-  font-size: 2rem;
-  text-align: center;
-}
-main div.cards div.card4 a:hover {
-  background-image: url("../images/dining.jpg");
-}
-
-footer {
-  background-color: black;
-  max-width: 75rem;
-  color: white;
-  text-align: center;
-  bottom: 0;
+body .search input[type=text] {
+  width: 400px;
   height: 30px;
+}
+body .search {
+  float: left;
+  margin: 3rem;
+}
+body h2 {
+  background-color: red;
+}
+body div.bookContainer h2 {
+  background-color: pink;
+  float: left;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  margin-left: 1rem;
 }
 
-@media only screen and (max-width: 34.9375rem) {
-  /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
-  nav {
-    background-color: black;
-    /* Navigation Button  -------------------------------------------------------- */
-    /* Navigation Bar -------------------------------------------------------- */
-    /* Toggle the navigation bar to expand down  */
-    /* Submenus – optional .parent class indicates dropdowns */
-    /*hide the sub menu items by default*/
+@media only screen and (min-width: 35rem) {
+  body {
+    color: blue;
   }
-  nav button {
-    width: 100%;
-    padding: 0.4rem 2vw;
-    text-align: left;
-    background: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color: #fff;
-    cursor: pointer;
-  }
-  nav #primaryNav {
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    z-index: 998;
-  }
-  nav #primaryNav li.active a {
-    background-color: white;
-    color: black;
-  }
-  nav #primaryNav li a {
-    display: block;
-    width: 100%;
-    padding: 0.75rem 2vw;
-    font-size: 14px;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
-    color: white;
-    text-decoration: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-  }
-  nav #primaryNav li a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  nav #primaryNav.open {
-    height: auto;
-  }
-  nav #primaryNav > li:hover > a {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  nav #primaryNav li.parent > a:after {
-    font-size: 0.75rem;
-    content: "▼";
-    color: rgba(255, 255, 255, 0.5);
-    float: right;
-  }
-  nav #primaryNav li.parent > a:hover {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  nav #primaryNav li ul {
-    display: none;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 0;
-  }
-  nav #primaryNav li ul a {
-    border-top: solid 1px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-    padding: 10px 5%;
-  }
-  nav #primaryNav li:hover ul {
-    display: block;
-  }
-  /* End Mobile Styles */
-}
-@media only screen and (min-width: 35rem) and (min-width: 35rem) {
-  body header {
-    color: white;
-  }
-  body #navWrapper {
-    background-color: black;
-    width: 100%;
-  }
-  body #navWrapper nav {
-    max-width: 64rem;
-  }
-  body #navWrapper nav button {
+  body nav button {
     display: none;
   }
-  body #navWrapper nav ul#primaryNav {
+  body nav ul#primaryNav {
     display: flex;
+    flex-flow: row-reverse;
     margin: 0;
     padding: 0;
     list-style-type: none;
     border-left: 1px solid rgb(255, 255, 255);
   }
-  body #navWrapper nav ul#primaryNav li {
+  body nav ul#primaryNav li {
     border-right: 1px solid rgb(255, 255, 255);
     list-style-type: none;
   }
-  body #navWrapper nav ul#primaryNav li a {
+  body nav ul#primaryNav li a {
+    color: white;
     display: block;
     text-decoration: none;
-    color: white;
     padding: 0.75rem 2vw;
     font-size: 1.1rem;
   }
-  body #navWrapper nav #primaryNav li.parent > a:after {
+  body nav #primaryNav li.parent > a:after {
     content: "▼";
     font-size: 0.65rem;
     color: white;
     float: left;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
   }
-  body #navWrapper nav ul li ul {
+  body nav ul li ul {
     display: flex;
     flex-direction: column;
     background-color: #333333;
@@ -710,48 +475,17 @@ footer {
     left: -999rem;
     z-index: 99;
   }
-  body #navWrapper nav ul li ul li {
+  body nav ul li ul li {
     border-right: none;
     border-top: solid 1px rgba(0, 0, 0, 0.2);
   }
-  body #navWrapper nav ul li:hover ul {
+  body nav ul li:hover ul {
     left: auto;
     margin-left: 0;
   }
-  body div.cards {
-    gap: 1%;
-  }
-  body div.cards div.card1 {
-    flex-basis: 48%;
-  }
-  body div.cards div.card2 {
-    flex-basis: 48%;
-  }
-  body div.cards div.card3 {
-    flex-basis: 48%;
-  }
-  body div.cards div.card4 {
-    flex-basis: 48%;
-  }
 }
-@media only screen and (min-width: 65rem) and (min-width: 60rem) {
-  body nav ul li a {
-    font-size: 0.9rem;
-    padding: 0.5rem 1.2rem;
-  }
-  body div.cards {
-    gap: 1%;
-  }
-  body div.cards div.card1 {
-    flex-basis: 24.1%;
-  }
-  body div.cards div.card2 {
-    flex-basis: 24.1%;
-  }
-  body div.cards div.card3 {
-    flex-basis: 24.1%;
-  }
-  body div.cards div.card4 {
-    flex-basis: 24.1%;
+@media only screen and (min-width: 65rem) {
+  body {
+    color: green;
   }
 }/*# sourceMappingURL=style.css.map */

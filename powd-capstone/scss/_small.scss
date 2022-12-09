@@ -1,0 +1,30 @@
+body {
+    color: red;
+    header {
+        background-color: pink;
+    }
+    nav {
+        background-color: rgb(147, 147, 255);
+    }
+
+    .search input[type="text"] {
+        width: 400px;
+        height: 30px;
+    }
+
+    .search {
+        float: left;
+        margin: 3rem;
+    }
+    h2 {
+        background-color: red;
+    }
+    div.bookContainer {
+        h2 {
+            background-color: pink;
+            float: left;
+            width: 100%;
+            margin-left: 1rem;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goodreads</title>
+    <link href="./style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContent">
+        <img src="./images/book-logo.png" alt="logo" />
+        <h1>goodreads</h1>
+      </div>
+    </header>
+    <!-- END HEADER DIV -->
+
+    <div id="navWrapper">
+      <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+          <li class="active"><a href="./home.html">My Books</a></li>
+          <li><a href="./stats.html">Statistics</a></li>
+          <li><a href="#">Browse</a></li>
+          <li class="parent">
+            <a href="#">Community</a>
+            <ul>
+              <li><a href="./discussion.html">Discussions</a></li>
+              <li><a href="./author.html">Ask the Author</a></li>
+            </ul>
+          </li>
+          <!--end parent li-->
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav -->
+
+    <div class="search">
+      <form action="#">
+        <input type="text" placeholder="search" name="searchbar" />
+      </form>
+    </div>
+    
+    <!--end search div-->
+
+    <h2>My Books</h2>
+
+    <div class="bookContainer">
+      <h2>Currently Reading</h2>
+      <figure>
+        <img src="#" alt="book">
+      </figure>
+    </div>
+  </body>
+</html>
