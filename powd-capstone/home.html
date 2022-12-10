@@ -10,8 +10,19 @@
   <body>
     <header>
       <div class="headerContent">
-        <img src="./images/book-logo.png" alt="logo" />
-        <h1>goodreads</h1>
+        <figure class="logo">
+          <img
+            src="./images/book-logo.png"
+            alt="logo"
+            srcset="
+              ./images/logo1.png 1x,
+              images/logo2.png   2x,
+              images/logo3.png   3x
+            "
+          />
+
+          <h1>goodreads</h1>
+        </figure>
       </div>
     </header>
     <!-- END HEADER DIV -->
@@ -35,22 +46,42 @@
       </nav>
     </div>
     <!-- end nav -->
+    <div class="grid">
+      <div class="search">
+        <form action="#">
+          <input type="text" placeholder="search" name="searchbar" />
+        </form>
+      </div>
 
-    <div class="search">
-      <form action="#">
-        <input type="text" placeholder="search" name="searchbar" />
-      </form>
-    </div>
-    
-    <!--end search div-->
+      <!--end search div-->
 
-    <h2>My Books</h2>
-
-    <div class="bookContainer">
       <h2>Currently Reading</h2>
-      <figure>
-        <img src="#" alt="book">
-      </figure>
+
+      <h2>My Books</h2>
+
+      <div class="bookContainer">
+        <figure>
+          <img src="./images/book1.jpg" alt="book" />
+          <img src="./images/book2.jpg" alt="book" />
+          <img src="./images/book3.jpg" alt="book" height="191" />
+          <img src="./images/book4.jpg" alt="book" height="191" />
+          <!--end book container div-->
+        </figure>
+
+        <div class="wantbooks">
+          <figure>
+            <h2>Want to Read</h2>
+            <img src="./images/book1.jpg" alt="book" />
+            <img src="./images/book2.jpg" alt="book" />
+            <img src="./images/book3.jpg" alt="book" height="191" />
+            <img src="./images/book4.jpg" alt="book" height="191" />
+          </figure>
+        </div>
+        <div class="recbooks">
+          <h2>Recommendations</h2>
+        </div>
+      </div>
+      <!--end grid div-->
     </div>
   </body>
 </html>

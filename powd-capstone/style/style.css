@@ -421,14 +421,37 @@ body .search {
   float: left;
   margin: 3rem;
 }
-body h2 {
-  background-color: red;
+body div.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4;
 }
-body div.bookContainer h2 {
-  background-color: pink;
-  float: left;
+body div.grid h2:nth-child(2) {
+  grid-row-start: 2;
+}
+body div.grid h2 {
+  margin-left: 2rem;
+}
+body div.grid div.bookContainer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+}
+body div.grid div.bookContainer h2 {
   width: 100%;
   margin-left: 1rem;
+}
+body div.grid div.wantbooks {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+}
+body div.grid div.recbooks {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: red;
 }
 
 @media only screen and (min-width: 35rem) {

@@ -16,15 +16,41 @@ body {
         float: left;
         margin: 3rem;
     }
-    h2 {
-        background-color: red;
-    }
-    div.bookContainer {
-        h2 {
-            background-color: pink;
-            float: left;
-            width: 100%;
-            margin-left: 1rem;
+    // h2 {
+    //     // background-color: red;
+    // }
+    div.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4;
+        h2:nth-child(2) {
+            grid-row-start: 2;
         }
-    }
+        h2 {
+            margin-left: 2rem;
+        }
+        div.bookContainer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                width: 100%;
+                margin-left: 1rem;
+            }
+        } // end book container div
+
+        div.wantbooks {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: flex;
+            flex-direction: column;
+        }
+        div.recbooks {
+            grid-column-start: 3;
+            grid-row-start: 2;
+            background-color: red;
+        }
+    } //end grid div
 }
