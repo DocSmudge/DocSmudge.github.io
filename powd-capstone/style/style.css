@@ -406,6 +406,7 @@ template {
 
 body {
   color: red;
+  width: 100%;
 }
 body header {
   background-color: pink;
@@ -418,40 +419,43 @@ body .search input[type=text] {
   height: 30px;
 }
 body .search {
-  float: left;
-  margin: 3rem;
+  margin: 2rem 1rem;
 }
-body div.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 4;
-}
-body div.grid h2:nth-child(2) {
-  grid-row-start: 2;
-}
-body div.grid h2 {
-  margin-left: 2rem;
-}
-body div.grid div.bookContainer {
-  grid-column-start: 1;
-  grid-column-end: 4;
+body div.bookSection {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
 }
-body div.grid div.bookContainer h2 {
+body div.bookSection h2#bookSection_Title {
+  width: 100%;
+  text-align: center;
+}
+body div.bookSection div.bookContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+body div.bookSection div.bookContainer h2 {
   width: 100%;
   margin-left: 1rem;
 }
-body div.grid div.wantbooks {
-  grid-column-start: 1;
-  grid-column-end: 4;
+body div.bookSection div.bookContainer .readingBooks h2,
+body div.bookSection div.bookContainer .wantbooks h2 {
+  margin: 0;
+}
+body div.bookSection div.bookContainer .readingBooks div,
+body div.bookSection div.bookContainer .wantbooks div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-body div.grid div.recbooks {
-  grid-column-start: 3;
-  grid-row-start: 2;
-  background-color: red;
+body div.bookSection div.bookContainer .readingBooks div img,
+body div.bookSection div.bookContainer .wantbooks div img {
+  width: 75%;
+  height: auto;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -505,6 +509,10 @@ body div.grid div.recbooks {
   body nav ul li:hover ul {
     left: auto;
     margin-left: 0;
+  }
+  body div.bookSection div.bookContainer .readingBooks div,
+body div.bookSection div.bookContainer .wantbooks div {
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 65rem) {

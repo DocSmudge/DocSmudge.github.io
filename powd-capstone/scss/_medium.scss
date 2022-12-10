@@ -53,5 +53,18 @@
                 margin-left: 0;
             }
         }
+
+        div.bookSection {
+            div.bookContainer {
+                // flex-direction: row;
+
+                .readingBooks,
+                .wantbooks {
+                    div {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
     }
 } //end media query

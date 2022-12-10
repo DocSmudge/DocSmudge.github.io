@@ -1,5 +1,7 @@
 body {
     color: red;
+    width: 100%;
+
     header {
         background-color: pink;
     }
@@ -13,44 +15,48 @@ body {
     }
 
     .search {
-        float: left;
-        margin: 3rem;
+        margin: 2rem 1rem;
     }
-    // h2 {
-    //     // background-color: red;
-    // }
-    div.grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 4;
-        h2:nth-child(2) {
-            grid-row-start: 2;
+
+    div.bookSection {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 1rem;
+
+        h2#bookSection_Title {
+            width: 100%;
+            text-align: center;
         }
-        h2 {
-            margin-left: 2rem;
-        }
+
         div.bookContainer {
-            grid-column-start: 1;
-            grid-column-end: 4;
             display: flex;
             flex-direction: column;
+            width: 100%;
+            gap: 1rem;
 
             h2 {
                 width: 100%;
                 margin-left: 1rem;
             }
-        } // end book container div
 
-        div.wantbooks {
-            grid-column-start: 1;
-            grid-column-end: 4;
-            display: flex;
-            flex-direction: column;
-        }
-        div.recbooks {
-            grid-column-start: 3;
-            grid-row-start: 2;
-            background-color: red;
-        }
+            .readingBooks,
+            .wantbooks {
+                h2 {
+                    margin: 0;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    img {
+                        width: 75%;
+                        height: auto;
+                    }
+                }
+            }
+        } // end book container div
     } //end grid div
 }
