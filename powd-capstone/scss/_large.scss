@@ -1,5 +1,42 @@
 @media only screen and(min-width:65rem) {
     body {
         color: green;
+
+        div.bookSection {
+            div.bookContainer {
+                display: grid;
+                grid-template-areas:
+                    "current recomended recomended"
+                    "want recomended recomended";
+
+                .readingBooks {
+                    grid-area: current;
+
+                    div {
+                        width: 100%;
+                        justify-content: space-evenly;
+                        img {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                .wantbooks {
+                    grid-area: want;
+
+                    div {
+                        width: 100%;
+                        justify-content: space-evenly;
+                        img {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                .recbooks {
+                    grid-area: recomended;
+                }
+            }
+        }
     }
 } //end media query

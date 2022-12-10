@@ -457,6 +457,9 @@ body div.bookSection div.bookContainer .wantbooks div img {
   width: 75%;
   height: auto;
 }
+body div.bookSection div.bookContainer .recbooks h2 {
+  margin: 0;
+}
 
 @media only screen and (min-width: 35rem) {
   body {
@@ -518,5 +521,32 @@ body div.bookSection div.bookContainer .wantbooks div {
 @media only screen and (min-width: 65rem) {
   body {
     color: green;
+  }
+  body div.bookSection div.bookContainer {
+    display: grid;
+    grid-template-areas: "current recomended recomended" "want recomended recomended";
+  }
+  body div.bookSection div.bookContainer .readingBooks {
+    grid-area: current;
+  }
+  body div.bookSection div.bookContainer .readingBooks div {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  body div.bookSection div.bookContainer .readingBooks div img {
+    width: 200px;
+  }
+  body div.bookSection div.bookContainer .wantbooks {
+    grid-area: want;
+  }
+  body div.bookSection div.bookContainer .wantbooks div {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  body div.bookSection div.bookContainer .wantbooks div img {
+    width: 200px;
+  }
+  body div.bookSection div.bookContainer .recbooks {
+    grid-area: recomended;
   }
 }/*# sourceMappingURL=style.css.map */
